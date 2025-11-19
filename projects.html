@@ -4,30 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mes Projets</title>
-  <link rel="stylesheet" href="projects.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <h1>Mes Projets</h1>
-    <p>Une sélection de mes travaux, prototypes et expérimentations gameplay.</p>
-  </header>
-
+    <header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="index.html">Boutarin <span class="dot">Antoine</span></a>
+        <nav class="site-nav">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="mes-projets.html">Mes projets</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
   <main class="projects-grid">
     <div class="project-card">
-      <h2>Nom du projet</h2>
-      <p>Brève description du projet, objectifs, rôle et techno utilisées.</p>
+      <video class="project-video" controls>
+        <source src="videos/projet1.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      <h2>Nom du projet 1</h2>
+      <p>Description détaillée du projet, objectifs et rôle.</p>
+      <div class="tech">Technologies utilisées : C#, Unity</div>
+      <a class="btn" href="https://itch.io/">Itch.io</a>
+    </div>
+
+    <div class="project-card">
+      <video class="project-video" controls>
+        <source src="videos/projet2.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      <h2>Nom du projet 2</h2>
+      <p>Description détaillée du projet, objectifs et rôle.</p>
+      <div class="tech">Technologies utilisées : C++, Unreal Engine</div>
       <a class="btn" href="#">Voir plus</a>
     </div>
 
     <div class="project-card">
-      <h2>Nom du projet</h2>
-      <p>Brève description du projet, objectifs, rôle et techno utilisées.</p>
-      <a class="btn" href="#">Voir plus</a>
-    </div>
-
-    <div class="project-card">
-      <h2>Nom du projet</h2>
-      <p>Brève description du projet, objectifs, rôle et techno utilisées.</p>
+      <video class="project-video" controls>
+        <source src="videos/projet3.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo.
+      </video>
+      <h2>Nom du projet 3</h2>
+      <p>Description détaillée du projet, objectifs et rôle.</p>
+      <div class="tech">Technologies utilisées : Python, Pygame</div>
       <a class="btn" href="#">Voir plus</a>
     </div>
   </main>
