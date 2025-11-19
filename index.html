@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mon Super Site</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    h1 {
-      font-size: 3rem;
-      color: #222;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #333;
-    }
-    .button {
-      margin-top: 2rem;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      border-radius: 12px;
-      border: none;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
-    .button:hover {
-      transform: scale(1.1);
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Boutarin Antoine — Portfolio</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>CACA !</h1>
-  <p>Je suis Simon, developpeur de jeux</p>
-  <button class="button" onclick="alert('Bruh… ça marche vraiment !')">Clique-moi</button>
-</body>
-</html>
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="#">Boutarin <span class="dot">Antoine</span></a>
+
+
+<button id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+
+<nav class="site-nav" id="site-nav">
+<ul>
+<li><a href="#projets">Projets perso</a></li>
+<li><a href="#formation">Formation</a></li>
+<li><a href="#experience">Expérience</a></li>
+<li><a class="cta" href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main class="hero">
+<div class="container hero-inner">
+<div class="hero-content">
+<h1>Gameplay programmer <br/>en devenir</h1>
+<p>Je conçois des mécaniques de jeu claires, testables et agréables à jouer. Passionné par le prototypage rapide et l'itération.</p>
+<a class="primary-btn" href="#projets">Voir mes projets</a>
+</div>
+
+
+<div class="hero-panels">
+<article id="projets" class="panel">
+<h3>Projets perso</h3>
+<p>Prototypes gameplay, mini-jeux et outils. Chaque projet met l'accent sur la lisibilité du code et la réutilisabilité des systèmes.</p>
+</article>
+
+
+<article id="formation" class="panel">
+<h3>Formation</h3>
+<p>Étudiant en informatique (2ème année) — spécialisation en développement de jeux vidéo. Cours & projets axés sur la programmation temps réel et la logique de gameplay.</p>
+</article>
+
+
+<article id="experience" class="panel">
+<h3>Expérience</h3>
+<p>Contributions à des projets étudiants et forks personnels : prototypes Unity/C#, petits outils en C++ et scripts d'éditeur pour accélérer le workflow.</p>
+</article>
+</div>
+</div>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">© 2025 Boutarin Antoine — <a href="#contact">Contact</a></div>
+</footer>
+
+
+<script>
+// simple nav toggle for mobile
+const navToggle = document.getElementById('nav-toggle');
+const siteNav = document.getElementById('site-nav');
+navToggle.addEventListener('click', () => {
+siteNav.classList.toggle('open');
+navToggle.classList.toggle('open');
+});
+
+
+// close nav when clicking a link (mobile)
+document.querySelectorAll('.site-nav a').forEach(a => {
+a.addEventListener('click', () => {
+siteNav.classList.remove('open');
+navToggle.classList.remove('open');
+});
+});
