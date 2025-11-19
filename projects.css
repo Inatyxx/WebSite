@@ -1,0 +1,86 @@
+/* --- Style général --- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1b1f3b, #3d1e6d);
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  opacity: 0.8;
+}
+
+/* --- Grille des projets --- */
+.projects-grid {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* --- Cartes projets --- */
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  border-radius: 18px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Vidéo intégrée */
+.project-video {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.project-card h2 {
+  margin: 0.5rem 0;
+  font-size: 1.6rem;
+}
+
+.project-card p {
+  opacity: 0.85;
+  line-height: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.tech {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+/* Boutons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #6c4bff;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #8568ff;
+}
