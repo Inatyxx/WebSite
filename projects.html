@@ -1,59 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mes Projets</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mes Projets</title>
+<link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header class="site-header">
-    <div class="header-inner">
-        <a class="brand" href="index.html">Boutarin <span class="dot">Antoine</span></a>
-        <nav class="site-nav">
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="projects.html">Mes projets</a></li>
-            <li><a href="index.html#formation">Formation</a></li>
-            <li><a href="index.html#experience">Expérience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        </nav>
-    </div>
-    </header>
-  <main class="projects-grid">
-    <div class="project-card">
-      <video class="project-video" controls>
-        <source src="videos/projet1.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas la vidéo.
-      </video>
-      <h2>Gab and the bears</h2>
-      <p>Fps ou l'on tire sur des ours.</p>
-      <div class="tech">C#, Unity</div>
-      <a class="btn" href="https://inatyxx.itch.io/gab-and-the-bears">Itch.io</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Boutarin <span class="dot">Antoine</span></a>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projects.html">Mes projets</a></li>
+        <li><a href="index.html#formation">Formation</a></li>
+        <li><a href="index.html#experience">Expérience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="projects-grid">
+
+  <!-- Projet 1 -->
+  <div class="project-card">
+    <video class="project-video" controls>
+      <source src="videos/projet1.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+
+    <h2>Gab and the bears</h2>
+    <p>FPS où l'on tire sur des ours.</p>
+
+    <div class="tags">
+      <span class="tag">C#</span>
+      <span class="tag">Unity</span>
     </div>
 
-    <div class="project-card">
-      <video class="project-video" controls>
-        <source src="videos/projet2.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas la vidéo.
-      </video>
-      <h2>PokemonLike</h2>
-      <p>Jeu pokémon recréer en console</p>
-      <div class="tech">C#, Visual Studio 2025</div>
-      <a class="btn" href="#">(Mettre le build)</a>
+    <a class="btn" href="https://inatyxx.itch.io/gab-and-the-bears">Itch.io</a>
+  </div>
+
+
+  <!-- Projet 2 -->
+  <div class="project-card">
+    <video class="project-video" controls>
+      <source src="videos/projet2.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+
+    <h2>PokemonLike</h2>
+    <p>Jeu Pokémon recréé en console.</p>
+
+    <div class="tags">
+      <span class="tag">C#</span>
+      <span class="tag">Visual Studio 2025</span>
     </div>
 
-    <div class="project-card">
-      <video class="project-video" controls>
-        <source src="videos/projet3.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas la vidéo.
-      </video>
-      <h2>HungryShark But a Bit Better</h2>
-      <p>RogueLite ou il faut manger le plus de poisson possible en un temps impartie.<br/>Map générer procéduralement.</p>
-      <div class="tech">C#, Unity, https://github.com/Auburn/FastNoiseLite/tree/master/CSharp</div>
-      <a class="btn" href="#">Voir plus</a>
+    <a class="btn" href="#">(Mettre le build)</a>
+  </div>
+
+
+  <!-- Projet 3 -->
+  <div class="project-card">
+    <video class="project-video" controls>
+      <source src="videos/projet3.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la vidéo.
+    </video>
+
+    <h2>HungryShark But a Bit Better</h2>
+    <p>
+      RogueLite où il faut manger un max de poissons en un temps imparti.<br>
+      Map générée procéduralement.
+    </p>
+
+    <div class="tags">
+      <span class="tag">C#</span>
+      <span class="tag">Unity</span>
+      <a class="tag tag-link" href="https://github.com/Auburn/FastNoiseLite/tree/master/CSharp" target="_blank">
+        FastNoiseLite
+      </a>
     </div>
-  </main>
+
+    <a class="btn" href="#">Voir plus</a>
+  </div>
+
+</main>
+
 </body>
 </html>

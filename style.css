@@ -259,3 +259,28 @@ body {
 .contact-card .btn:hover {
   background: #8568ff;
 }
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #fff;
+}
+
+.tag-link {
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.tag-link:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
