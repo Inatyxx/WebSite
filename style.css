@@ -27,6 +27,7 @@ background: linear-gradient(120deg,var(--bg-1) 0%, #071033 45%, #020617 100%);
 .site-nav a{color:var(--text);text-decoration:none;padding:0.5rem 0.7rem;border-radius:8px;transition:background 150ms}
 .site-nav a:hover{background:var(--glass)}
 .cta{background:linear-gradient(90deg,var(--accent1),var(--accent2));padding:0.5rem 0.9rem}
+.contact{display:inline-block;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;padding:0.6rem 1rem;border-radius:10px;text-decoration:none}
 
 
 /* mobile toggle */
@@ -40,8 +41,9 @@ background: linear-gradient(120deg,var(--bg-1) 0%, #071033 45%, #020617 100%);
 /* Hero */
 .hero{padding:3rem 0}
 .hero-inner{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:start}
-.hero-content h1{font-size:2.2rem;margin:0 0 0.7rem}
-.hero-content p{margin:0 0 1rem;color:#cfd9ff}
+.hero-content h1{font-size:2.2rem;margin:0 0 0.25rem}
+.hero-content p{margin:0 0 1rem;color:#cfd9ff}  
+.hero-avatar {width: 20%; max-width: 100%; height: auto; display: block;}
 .primary-btn{display:inline-block;background:linear-gradient(90deg,var(--accent1),var(--accent2));color:white;padding:0.6rem 1rem;border-radius:10px;text-decoration:none}
 
 
@@ -208,4 +210,52 @@ body {
   background: linear-gradient(90deg,#4f00ff,#00d2ff);
   padding: 0.3rem 0.8rem;
   border-radius: 6px;
+}
+
+/* --- Page Contact --- */
+.contact-wrapper {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.contact-header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header p {
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.contact-card {
+  background: var(--glass, rgba(255,255,255,0.06));
+  padding: 1.8rem;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.25);
+  text-align: left;
+}
+
+.contact-card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  margin: 0.3rem 0;
+}
+
+.contact-card .btn {
+  margin-top: 1rem;
+  display: inline-block;
+}
+.contact-card .btn:hover {
+  background: #8568ff;
 }
