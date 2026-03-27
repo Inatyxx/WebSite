@@ -3,68 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mes Projets — Boutarin Antoine</title>
+  <title>Projets — Boutarin Antoine</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html">Boutarin<span class="dot"> Antoine</span></a>
-
     <button id="burger" class="burger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
-
     <nav id="nav" class="site-nav">
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="projects.html">Projets</a></li>
-        <li><a href="index.html#formation">Formation</a></li>
-        <li><a href="index.html#experience">Expérience</a></li>
-        <li><a class="primary-btn" href="contact.html">Contact</a></li>
+        <li><a href="index.html"    data-i18n="nav.home"></a></li>
+        <li><a href="projects.html" data-i18n="nav.projects"></a></li>
+        <li><a href="index.html#formation"  data-i18n="nav.formation"></a></li>
+        <li><a href="index.html#experience" data-i18n="nav.experience"></a></li>
+        <li><a class="primary-btn" href="contact.html" data-i18n="nav.contact"></a></li>
       </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="fr" title="Français"><img src="Img/frenchflag.png" alt="FR" /></button>
+        <button class="lang-btn" data-lang="en" title="English"><img src="Img/ukflag.png" alt="EN" /></button>
+      </div>
     </nav>
   </div>
 </header>
 
-<!-- PAGE HEADER -->
 <div class="projects-header">
-  <p class="section-tag">// Mes réalisations</p>
-  <h1>Projets</h1>
-  <p>Un aperçu de mes créations scolaires et personnelles.</p>
+  <p class="section-tag" data-i18n="projects.tag"></p>
+  <h1 data-i18n="projects.title"></h1>
+  <p data-i18n="projects.sub"></p>
 </div>
 
-<!-- GRILLE -->
 <main class="projects-grid">
 
-  <!-- Projet 1 -->
   <div class="project-card">
     <video class="project-video" controls muted playsinline>
       <source src="Img/Bears.mp4" type="video/mp4">
     </video>
     <div class="project-body">
-      <h2>Gab and the Bears</h2>
-      <p>FPS avec une bonne gestion de caméra et des feedbacks clairs au joueur.</p>
+      <h2 data-i18n="project.1.title"></h2>
+      <p data-i18n="project.1.desc"></p>
       <div class="tags">
         <span class="tag">C#</span>
         <span class="tag">Unity</span>
       </div>
-      <a class="btn" href="https://inatyxx.itch.io/gab-and-the-bears" target="_blank" rel="noopener">
-        Voir sur Itch.io →
-      </a>
+      <a class="btn" href="https://inatyxx.itch.io/gab-and-the-bears" target="_blank" rel="noopener" data-i18n="project.btn"></a>
     </div>
   </div>
 
-  <!-- Projet 2 -->
   <div class="project-card">
     <video class="project-video" controls muted playsinline>
       <source src="Img/pokelike.mp4" type="video/mp4">
     </video>
     <div class="project-body">
-      <h2>PokémonLike</h2>
-      <p>Jeu Pokémon recréé en console pour apprendre les bases du C# et de la POO.</p>
+      <h2 data-i18n="project.2.title"></h2>
+      <p data-i18n="project.2.desc"></p>
       <div class="tags">
         <span class="tag">C#</span>
         <span class="tag">Visual Studio</span>
@@ -72,42 +67,36 @@
     </div>
   </div>
 
-  <!-- Projet 3 -->
   <div class="project-card">
     <video class="project-video" controls muted playsinline>
       <source src="Img/hungryShark.mp4" type="video/mp4">
     </video>
     <div class="project-body">
-      <h2>HungryShark But Better</h2>
-      <p>Jeu avec génération procédurale de l'environnement via FastNoiseLite.</p>
+      <h2 data-i18n="project.3.title"></h2>
+      <p data-i18n="project.3.desc"></p>
       <div class="tags">
         <span class="tag">C#</span>
         <span class="tag">Unity</span>
-        <a class="tag tag-link" href="https://github.com/Auburn/FastNoiseLite/tree/master/CSharp" target="_blank" rel="noopener">
-          FastNoiseLite ↗
-        </a>
+        <a class="tag tag-link" href="https://github.com/Auburn/FastNoiseLite/tree/master/CSharp" target="_blank" rel="noopener">FastNoiseLite ↗</a>
       </div>
-      <a class="btn" href="https://gethub2807.itch.io/hungryshark" target="_blank" rel="noopener">
-        Voir sur Itch.io →
-      </a>
+      <a class="btn" href="https://gethub2807.itch.io/hungryshark" target="_blank" rel="noopener" data-i18n="project.btn"></a>
     </div>
   </div>
 
 </main>
 
-<!-- FOOTER -->
 <footer class="site-footer">
-  © 2026 — Boutarin Antoine
+  <span data-i18n="footer.text"></span> <a href="contact.html" data-i18n="footer.contact"></a>
 </footer>
 
+<script src="i18n.js"></script>
 <script>
   const burger = document.getElementById('burger');
-  const nav = document.getElementById('nav');
+  const nav    = document.getElementById('nav');
   burger.addEventListener('click', () => {
     burger.classList.toggle('open');
     nav.classList.toggle('open');
   });
 </script>
-
 </body>
 </html>

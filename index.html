@@ -8,107 +8,78 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="index.html">Boutarin<span class="dot"> Antoine</span></a>
-
     <button id="burger" class="burger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
-
     <nav id="nav" class="site-nav">
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="projects.html">Projets</a></li>
-        <li><a href="#formation">Formation</a></li>
-        <li><a href="#experience">Expérience</a></li>
-        <li><a class="primary-btn" href="contact.html">Contact</a></li>
+        <li><a href="index.html"    data-i18n="nav.home"></a></li>
+        <li><a href="projects.html" data-i18n="nav.projects"></a></li>
+        <li><a href="#formation"    data-i18n="nav.formation"></a></li>
+        <li><a href="#experience"   data-i18n="nav.experience"></a></li>
+        <li><a class="primary-btn" href="contact.html" data-i18n="nav.contact"></a></li>
       </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="fr" title="Français"><img src="Img/frenchflag.png" alt="FR" /></button>
+        <button class="lang-btn" data-lang="en" title="English"><img src="Img/ukflag.png" alt="EN" /></button>
+      </div>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
 <main class="hero">
   <div class="container hero-inner">
-
-    <!-- Gauche : profil + bio -->
     <div class="hero-content">
       <div class="profile-block">
-        <img class="hero-avatar" src="Img/Moi.png" alt="Photo de profil — Antoine Boutarin" />
+        <img class="hero-avatar" src="Img/Moi.png" alt="Antoine Boutarin" />
         <div class="hero-title">
           <h1>Boutarin Antoine</h1>
-          <p class="subtitle">// Game Programmer · G.Tech Lyon</p>
+          <p class="subtitle" data-i18n="hero.subtitle"></p>
         </div>
       </div>
-
-      <p class="hero-bio">
-        Passionné par le gameplay programming et les jeux vidéo,
-        j'aspire à rejoindre un studio en tant que Game Programmer.
-        Je suis actuellement en 3ᵉ année à Gaming Campus Lyon, option Développement Gameplay.
-      </p>
-
+      <p class="hero-bio" data-i18n="hero.bio"></p>
       <div class="hero-cta">
-        <a class="primary-btn" href="projects.html">Voir mes projets</a>
-        <a class="btn-outline" href="contact.html">Me contacter</a>
+        <a class="primary-btn" href="projects.html" data-i18n="hero.cta.projects"></a>
+        <a class="btn-outline"  href="contact.html" data-i18n="hero.cta.contact"></a>
       </div>
     </div>
 
-    <!-- Droite : panneaux info -->
     <div class="hero-panels">
-
       <div id="formation" class="panel">
-        <p class="panel-label">// Formation</p>
-        <h3>Parcours académique</h3>
-        <p>
-          <strong>2023 – 2026 · Bachelor G.Tech — Gaming Campus Lyon</strong><br>
-          3ᵉ année, option Développement Gameplay.
-        </p>
+        <p class="panel-label" data-i18n="panel.formation.label"></p>
+        <h3 data-i18n="panel.formation.title"></h3>
+        <p data-i18n="panel.formation.1" data-i18n-html></p>
         <br />
-        <p>
-          <strong>2022 – 2023 · Lycée Vaugelas, Chambéry</strong><br>
-          Baccalauréat général — Spécialités Maths & NSI, Mention Assez Bien.
-        </p>
+        <p data-i18n="panel.formation.2" data-i18n-html></p>
       </div>
-
       <div id="experience" class="panel">
-        <p class="panel-label">// Expérience</p>
-        <h3>Stages & distinctions</h3>
-        <p>
-          <strong>Mai – Juillet 2025 · Eurex CFE</strong><br>
-          Scripts Python pour automatiser le traitement des DSN : API JDC, Microsoft Graph, LockSelf,
-          gestion des tokens, anonymisation RGPD et transfert vers SharePoint.
-        </p>
+        <p class="panel-label" data-i18n="panel.experience.label"></p>
+        <h3 data-i18n="panel.experience.title"></h3>
+        <p data-i18n="panel.experience.1" data-i18n-html></p>
         <br />
-        <p>
-          <strong>Juin – Juillet 2024 · CIRC (OMS)</strong><br>
-          Initiation RedCap, dashboards via API Python, automatisation d'insertion d'images cliniques.
-        </p>
+        <p data-i18n="panel.experience.2" data-i18n-html></p>
         <br />
-        <p>
-          <strong>Juin 2022 · La Nuit du Code — 🏆 Vainqueur niveau Première</strong><br>
-          Développement d'un projet Python en équipe dans un temps limité (Lycée Vaugelas).
-        </p>
+        <p data-i18n="panel.experience.3" data-i18n-html></p>
       </div>
-
     </div>
   </div>
 </main>
 
-<!-- FOOTER -->
 <footer class="site-footer">
-  © 2026 Boutarin Antoine — <a href="contact.html">Contact</a>
+  <span data-i18n="footer.text"></span> <a href="contact.html" data-i18n="footer.contact"></a>
 </footer>
 
+<script src="i18n.js"></script>
 <script>
   const burger = document.getElementById('burger');
-  const nav = document.getElementById('nav');
+  const nav    = document.getElementById('nav');
   burger.addEventListener('click', () => {
     burger.classList.toggle('open');
     nav.classList.toggle('open');
   });
 </script>
-
 </body>
 </html>
