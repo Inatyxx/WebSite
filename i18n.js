@@ -6,6 +6,7 @@ const translations = {
 
   /* ---- INDEX ---- */
   'nav.home':        { fr: 'Accueil',    en: 'Home' },
+  'nav.about':       { fr: '00c0 propos',   en: 'About' },
   'nav.projects':    { fr: 'Projets',    en: 'Projects' },
   'nav.formation':   { fr: 'Formation',  en: 'Education' },
   'nav.experience':  { fr: 'Expérience', en: 'Experience' },
@@ -140,3 +141,33 @@ function initLangSwitcher() {
 }
 
 document.addEventListener('DOMContentLoaded', initLangSwitcher);
+
+/* ---- ABOUT ---- */
+Object.assign(translations, {
+  'about.tag':   { fr: '// Qui suis-je ?',  en: '// Who am I?' },
+  'about.title': { fr: 'À propos',          en: 'About me' },
+  'about.p1': {
+    fr: `Étudiant en 3ᵉ année à Gaming Campus Lyon, je me spécialise dans le développement gameplay avec une passion pour la conception de systèmes de jeu solides et fun à jouer. Je kiffe autant coder des mécaniques que jouer — League of Legends et les soulslike sont mes terrains de test préférés.`,
+    en: `3rd-year student at Gaming Campus Lyon, I specialise in gameplay development with a passion for building solid, fun game systems. I enjoy coding mechanics just as much as playing — League of Legends and soulslikes are my favourite testing grounds.`
+  },
+  'about.p2': {
+    fr: `En dehors du code, le sport tient une grande place dans mon quotidien — l'escalade et le snowboard sont mes deux disciplines de prédilection. J'aime les activités qui demandent à la fois de la technique et de la persévérance.`,
+    en: `Outside of code, sport is a big part of my daily life — climbing and snowboarding are my two disciplines of choice. I enjoy activities that require both technique and perseverance.`
+  },
+  'about.h1.title': { fr: 'Gameplay First',       en: 'Gameplay First' },
+  'about.h1.desc':  { fr: 'Des mécaniques lisibles, réactives et agréables à jouer.', en: 'Readable, responsive and satisfying mechanics.' },
+  'about.h2.title': { fr: 'Polyvalent',            en: 'Versatile' },
+  'about.h2.desc':  { fr: "C#, C++, Python, Unity, UE5 — j'aime apprendre de nouveaux outils.", en: 'C#, C++, Python, Unity, UE5 — I enjoy picking up new tools.' },
+  'about.h3.title': { fr: 'Curieux & rigoureux',   en: 'Curious & rigorous' },
+  'about.h3.desc':  { fr: 'J\'aime comprendre comment les choses fonctionnent en profondeur.', en: 'I like understanding how things work under the hood.' },
+
+  /* ---- SKILLS ---- */
+  'skills.tag':   { fr: '// Compétences',  en: '// Skills' },
+  'skills.title': { fr: 'Stack technique', en: 'Tech stack' },
+  'skills.group.languages': { fr: 'Langages',       en: 'Languages' },
+  'skills.group.engines':   { fr: 'Moteurs de jeu', en: 'Game engines' },
+  'skills.group.tools':     { fr: 'Outils',         en: 'Tools' },
+  'skills.group.concepts':  { fr: 'Concepts',       en: 'Concepts' },
+  'skills.legend.hot': { fr: 'Maîtrisé',    en: 'Proficient' },
+  'skills.legend.mid': { fr: 'En pratique', en: 'Practising' },
+});
