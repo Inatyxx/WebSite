@@ -6,68 +6,94 @@
   <title>Contact — Boutarin Antoine</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+
+<!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
+    <a class="brand" href="index.html">Boutarin<span class="dot"> Antoine</span></a>
 
-    <a class="brand" href="index.html">
-      Boutarin <span class="dot">Antoine</span>
-    </a>
-
-    <!-- Burger -->
-    <button id="burger" class="burger">
+    <button id="burger" class="burger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
 
-    <!-- Navigation -->
     <nav id="nav" class="site-nav">
       <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="projects.html">Mes projets</a></li>
+        <li><a href="projects.html">Projets</a></li>
         <li><a href="index.html#formation">Formation</a></li>
         <li><a href="index.html#experience">Expérience</a></li>
         <li><a class="primary-btn" href="contact.html">Contact</a></li>
       </ul>
     </nav>
-
   </div>
 </header>
 
+<!-- CONTACT -->
 <main class="contact-wrapper">
 
-  <section class="contact-header">
+  <div class="contact-header">
+    <p class="section-tag">// Entrons en contact</p>
     <h1>Contact</h1>
-    <p>Vous pouvez me contacter via les différentes informations ci-dessous.</p>
-  </section>
+    <p>Retrouvez toutes mes informations ci-dessous.</p>
+  </div>
 
-  <section class="contact-grid">
+  <div class="contact-grid">
 
-<div class="contact-card">
-  <h2>Mes informations</h2>
-  <p><strong>Adresse :</strong> 54 rue Germain</p>
-  <p><strong>Téléphone :</strong> 07 69 00 63 34</p>
-  <p><strong>Email :</strong> aboutarin@gaming.tech</p>
-  <p><strong>LinkedIn :</strong>
-    <a href="https://www.linkedin.com/in/antoine-boutarin-3aba61298/" target="_blank">
-      Boutarin Antoine
-    </a>
-  </p>
-</div>
+    <div class="contact-card">
+      <h2>Mes informations</h2>
 
+      <div class="contact-row">
+        <span class="label">Adresse</span>
+        <span class="value">54 rue Germain</span>
+      </div>
+
+      <div class="contact-row">
+        <span class="label">Tél.</span>
+        <span class="value"><a href="tel:+33769006334">07 69 00 63 34</a></span>
+      </div>
+
+      <div class="contact-row">
+        <span class="label">Email</span>
+        <span class="value"><a href="mailto:aboutarin@gaming.tech">aboutarin@gaming.tech</a></span>
+      </div>
+
+      <div class="contact-row">
+        <span class="label">LinkedIn</span>
+        <span class="value">
+          <a href="https://www.linkedin.com/in/antoine-boutarin-3aba61298/" target="_blank" rel="noopener">
+            Boutarin Antoine ↗
+          </a>
+        </span>
+      </div>
+    </div>
 
     <div class="contact-card">
       <h2>Mon CV</h2>
-      <p>Vous pouvez télécharger mon CV ici :</p>
-      <a class="btn" href="Img/CV Antoine Boutarin.pdf" download>Télécharger le CV</a>
+      <p style="color: var(--muted); font-size: 0.88rem; margin-bottom: 1.2rem;">
+        Téléchargez mon CV pour en savoir plus sur mon parcours.
+      </p>
+      <a class="btn" href="Img/CV Antoine Boutarin.pdf" download>
+        Télécharger le CV →
+      </a>
     </div>
 
-  </section>
+  </div>
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  © 2025 — Boutarin Antoine
+  © 2026 — Boutarin Antoine
 </footer>
+
+<script>
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    nav.classList.toggle('open');
+  });
+</script>
 
 </body>
 </html>

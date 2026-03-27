@@ -1,127 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Boutarin Antoine — Portfolio</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boutarin Antoine — Game Programmer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
+<!-- HEADER -->
 <header class="site-header">
   <div class="header-inner">
+    <a class="brand" href="index.html">Boutarin<span class="dot"> Antoine</span></a>
 
-    <a class="brand" href="index.html">
-      Boutarin <span class="dot">Antoine</span>
-    </a>
-
-    <!-- Burger -->
-    <button id="burger" class="burger">
+    <button id="burger" class="burger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
 
-    <!-- Navigation -->
     <nav id="nav" class="site-nav">
       <ul>
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="projects.html">Mes projets</a></li>
-        <li><a href="index.html#formation">Formation</a></li>
-        <li><a href="index.html#experience">Expérience</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#experience">Expérience</a></li>
         <li><a class="primary-btn" href="contact.html">Contact</a></li>
       </ul>
     </nav>
-
   </div>
 </header>
 
-
+<!-- HERO -->
 <main class="hero">
   <div class="container hero-inner">
 
-<div class="hero-content">
-  <img class="hero-avatar" src="Img/Moi.png" alt="Photo de profil">
-  <div class="hero-title">
-    <h1>Boutarin Antoine</h1>
-    <h3>Étudiant Game Programming – G.Tech Lyon</h3>
-    <p>
-      Passionné par le gameplay programming et les jeux vidéo en général,
-      j’aspire à rejoindre un studio en tant que Game Programmer.
-    </p>
-  </div>
-</div>
+    <!-- Gauche : profil + bio -->
+    <div class="hero-content">
+      <div class="profile-block">
+        <img class="hero-avatar" src="Img/Moi.png" alt="Photo de profil — Antoine Boutarin" />
+        <div class="hero-title">
+          <h1>Boutarin Antoine</h1>
+          <p class="subtitle">// Game Programmer · G.Tech Lyon</p>
+        </div>
+      </div>
 
+      <p class="hero-bio">
+        Passionné par le gameplay programming et les jeux vidéo,
+        j'aspire à rejoindre un studio en tant que Game Programmer.
+        Je suis actuellement en 3ᵉ année à Gaming Campus Lyon, option Développement Gameplay.
+      </p>
 
+      <div class="hero-cta">
+        <a class="primary-btn" href="projects.html">Voir mes projets</a>
+        <a class="btn-outline" href="contact.html">Me contacter</a>
+      </div>
+    </div>
 
+    <!-- Droite : panneaux info -->
     <div class="hero-panels">
 
-      <article id="projets" class="panel">
-        <h3>Projets perso + scolaires</h3>
-        <p>Découvrez mes créations, prototypes et travaux étudiants.</p>
-        <a class="primary-btn" href="projects.html">Voir mes projets</a>
-      </article>
+      <div id="formation" class="panel">
+        <p class="panel-label">// Formation</p>
+        <h3>Parcours académique</h3>
+        <p>
+          <strong>2023 – 2026 · Bachelor G.Tech — Gaming Campus Lyon</strong><br>
+          3ᵉ année, option Développement Gameplay.
+        </p>
+        <br />
+        <p>
+          <strong>2022 – 2023 · Lycée Vaugelas, Chambéry</strong><br>
+          Baccalauréat général — Spécialités Maths & NSI, Mention Assez Bien.
+        </p>
+      </div>
 
-<article id="formation" class="panel">
-  <h3>Formation</h3>
-  <p>
-    <strong>2023 – 2026 · Bachelor G.Tech – Gaming Campus Lyon</strong><br>
-    3ᵉ année, option Développement Gameplay.</p>
-  </p>
-<br>
-  <p>
-    <strong>2022 – 2023 · Lycée Vaugelas, Chambéry</strong><br>
-    Baccalauréat général — Spécialités Mathématiques & NSI, Mention Assez Bien.
-  </p>
-</article>
-
-
-<article id="experience" class="panel">
-  <h3>Expérience</h3>
-
-  <p>
-    <strong>Mai – Juillet 2025 · Stage 2ᵉ année — Eurex CFE</strong><br>
-    Développement de scripts Python pour automatiser le traitement des DSN :
-    appels API (JDC, Microsoft Graph, LockSelf), gestion des tokens,
-    anonymisation RGPD et transfert automatisé vers SharePoint.<br>
-    Structuration du code, logging et documentation technique.
-  </p>
-<br>
-  <p>
-    <strong>Juin – Juillet 2024 · Stage 1ʳᵉ année — Centre International de Recherche sur le Cancer (CIRC)</strong><br>
-    Initiation à RedCap, recherche de solutions de transfert de bases de données
-    entre serveurs, création de dashboards via API Python et automatisation de
-    l’insertion d’images cliniques dans RedCap.
-  </p>
-<br
-  <p>
-    <strong>Juin 2022 · La Nuit du Code — Vainqueur niveau Première</strong><br>
-    Concours en équipe au lycée Vaugelas, développement d’un projet en Python
-    dans un temps limité.
-  </p>
-
-</article>
-
+      <div id="experience" class="panel">
+        <p class="panel-label">// Expérience</p>
+        <h3>Stages & distinctions</h3>
+        <p>
+          <strong>Mai – Juillet 2025 · Eurex CFE</strong><br>
+          Scripts Python pour automatiser le traitement des DSN : API JDC, Microsoft Graph, LockSelf,
+          gestion des tokens, anonymisation RGPD et transfert vers SharePoint.
+        </p>
+        <br />
+        <p>
+          <strong>Juin – Juillet 2024 · CIRC (OMS)</strong><br>
+          Initiation RedCap, dashboards via API Python, automatisation d'insertion d'images cliniques.
+        </p>
+        <br />
+        <p>
+          <strong>Juin 2022 · La Nuit du Code — 🏆 Vainqueur niveau Première</strong><br>
+          Développement d'un projet Python en équipe dans un temps limité (Lycée Vaugelas).
+        </p>
+      </div>
 
     </div>
   </div>
 </main>
 
+<!-- FOOTER -->
 <footer class="site-footer">
-  <div class="container">
-    © 2025 Boutarin Antoine — <a href="contact.html">Contact</a>
-  </div>
+  © 2026 Boutarin Antoine — <a href="contact.html">Contact</a>
 </footer>
 
-
-<!-- Burger JS -->
 <script>
-const burger = document.getElementById("burger");
-const nav = document.getElementById("nav");
-
-burger.addEventListener("click", () => {
-  burger.classList.toggle("open");
-  nav.classList.toggle("open");
-});
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    nav.classList.toggle('open');
+  });
 </script>
 
 </body>
