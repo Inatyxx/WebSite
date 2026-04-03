@@ -18,9 +18,9 @@
       <ul>
         <li><a href="index.html"    data-i18n="nav.home"></a></li>
         <li><a href="projects.html" data-i18n="nav.projects"></a></li>
-        <li><a href="#about"        data-i18n="nav.about"></a></li>
         <li><a href="#formation"    data-i18n="nav.formation"></a></li>
         <li><a href="#experience"   data-i18n="nav.experience"></a></li>
+        <li><a href="#skills"       data-i18n="nav.skills"></a></li>
         <li><a class="primary-btn" href="contact.html" data-i18n="nav.contact"></a></li>
       </ul>
       <div class="lang-switcher">
@@ -31,10 +31,11 @@
   </div>
 </header>
 
-<!-- HERO -->
 <main>
   <div class="hero">
     <div class="container hero-inner">
+
+      <!-- Gauche : profil + about intégré -->
       <div class="hero-content">
         <div class="profile-block">
           <img class="hero-avatar" src="Img/Moi.png" alt="Antoine Boutarin" />
@@ -43,13 +44,43 @@
             <p class="subtitle" data-i18n="hero.subtitle"></p>
           </div>
         </div>
-        <p class="hero-bio" data-i18n="hero.bio"></p>
+
+        <div class="about-text">
+          <p data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
+        </div>
+
+        <div class="hero-highlights">
+          <div class="highlight-card">
+            <span class="highlight-icon">🎮</span>
+            <div>
+              <strong data-i18n="about.h1.title"></strong>
+              <p data-i18n="about.h1.desc"></p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">🛠️</span>
+            <div>
+              <strong data-i18n="about.h2.title"></strong>
+              <p data-i18n="about.h2.desc"></p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <span class="highlight-icon">🏔️</span>
+            <div>
+              <strong data-i18n="about.h3.title"></strong>
+              <p data-i18n="about.h3.desc"></p>
+            </div>
+          </div>
+        </div>
+
         <div class="hero-cta">
           <a class="primary-btn" href="projects.html" data-i18n="hero.cta.projects"></a>
           <a class="btn-outline"  href="contact.html" data-i18n="hero.cta.contact"></a>
         </div>
       </div>
 
+      <!-- Droite : formation + expérience -->
       <div class="hero-panels">
         <div id="formation" class="panel">
           <p class="panel-label" data-i18n="panel.formation.label"></p>
@@ -68,45 +99,9 @@
           <p data-i18n="panel.experience.3" data-i18n-html></p>
         </div>
       </div>
+
     </div>
   </div>
-
-  <!-- À PROPOS -->
-  <section id="about" class="about-section container">
-    <div class="section-header">
-      <p class="section-tag" data-i18n="about.tag"></p>
-      <h2 data-i18n="about.title"></h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p data-i18n="about.p1"></p>
-        <p data-i18n="about.p2"></p>
-      </div>
-      <div class="about-highlights">
-        <div class="highlight-card">
-          <span class="highlight-icon">🎮</span>
-          <div>
-            <strong data-i18n="about.h1.title"></strong>
-            <p data-i18n="about.h1.desc"></p>
-          </div>
-        </div>
-        <div class="highlight-card">
-          <span class="highlight-icon">🛠️</span>
-          <div>
-            <strong data-i18n="about.h2.title"></strong>
-            <p data-i18n="about.h2.desc"></p>
-          </div>
-        </div>
-        <div class="highlight-card">
-          <span class="highlight-icon">🔍</span>
-          <div>
-            <strong data-i18n="about.h3.title"></strong>
-            <p data-i18n="about.h3.desc"></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- SKILLS -->
   <section id="skills" class="skills-section container">
@@ -120,9 +115,9 @@
         <p class="skill-group-label" data-i18n="skills.group.languages"></p>
         <div class="skill-pills">
           <span class="skill-pill pill-hot">C#</span>
-          <span class="skill-pill pill-hot">Python</span>
-          <span class="skill-pill pill-mid">C++</span>
+          <span class="skill-pill pill-hot">C++</span>
           <span class="skill-pill pill-mid">C</span>
+          <span class="skill-pill pill-mid">Python</span>
         </div>
       </div>
 
@@ -138,8 +133,8 @@
         <p class="skill-group-label" data-i18n="skills.group.tools"></p>
         <div class="skill-pills">
           <span class="skill-pill pill-hot">Git / GitHub</span>
-          <span class="skill-pill pill-hot">Visual Studio Code</span>
-          <span class="skill-pill pill-mid">Visual Studio</span> 
+          <span class="skill-pill pill-mid">Visual Studio</span>
+          <span class="skill-pill pill-mid">Rider</span>
         </div>
       </div>
 

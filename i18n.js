@@ -6,13 +6,14 @@ const translations = {
 
   /* ---- INDEX ---- */
   'nav.home':        { fr: 'Accueil',    en: 'Home' },
-  'nav.about':       { fr: 'À propos',   en: 'About' },
+  'nav.about':       { fr: '00c0 propos',   en: 'About' },
   'nav.projects':    { fr: 'Projets',    en: 'Projects' },
   'nav.formation':   { fr: 'Formation',  en: 'Education' },
   'nav.experience':  { fr: 'Expérience', en: 'Experience' },
+  'nav.skills':      { fr: 'Compétences', en: 'Skills' },
   'nav.contact':     { fr: 'Contact',    en: 'Contact' },
 
-  'hero.subtitle':   { fr: '// Étudiant · G.Tech Lyon - 3ème année', en: '// Student · G.Tech Lyon - 3rd year' },
+  'hero.subtitle':   { fr: '// Game Programmer · G.Tech Lyon', en: '// Game Programmer · G.Tech Lyon' },
   'hero.bio':        {
     fr: `Passionné par le gameplay programming et les jeux vidéo,
          j'aspire à rejoindre un studio en tant que Game Programmer.
