@@ -65,7 +65,11 @@ const translations = {
   'project.2.desc':  { fr: 'Jeu Pokémon recréé en console pour apprendre les bases du C# et de la POO.', en: 'Console Pokémon clone built to learn C# fundamentals and OOP.' },
   'project.3.title': { fr: 'HungryShark But Better',  en: 'HungryShark But Better' },
   'project.3.desc':  { fr: 'Jeu avec génération procédurale de l\'environnement via FastNoiseLite.', en: 'Game with procedurally generated environment using FastNoiseLite.' },
+  'project.4.title': { fr: 'WatchList',               en: 'WatchList' },
+  'project.4.desc':  { fr: 'Tracker de films et séries avec recherche TMDB, affiches et suivi épisode par épisode pour les séries.', en: 'Movie and TV tracker with TMDB search, posters, and per-episode tracking for series.' },
+  'project.status.progress': { fr: 'En cours', en: 'In progress' },
   'project.btn':     { fr: 'Voir sur Itch.io →',      en: 'View on Itch.io →' },
+  'project.btn.open': { fr: 'Ouvrir le projet →',     en: 'Open project →' },
 
   /* ---- CONTACT ---- */
   'contact.tag':     { fr: '// Entrons en contact', en: '// Let\'s connect' },
