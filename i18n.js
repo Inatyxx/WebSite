@@ -6,7 +6,7 @@ const translations = {
 
   /* ---- INDEX ---- */
   'nav.home':        { fr: 'Accueil',    en: 'Home' },
-  'nav.about':       { fr: '00c0 propos',   en: 'About' },
+  'nav.about':       { fr: 'À propos',   en: 'About' },
   'nav.projects':    { fr: 'Projets',    en: 'Projects' },
   'nav.formation':   { fr: 'Formation',  en: 'Education' },
   'nav.experience':  { fr: 'Expérience', en: 'Experience' },
