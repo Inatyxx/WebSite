@@ -218,8 +218,12 @@ Object.assign(translations, {
   'about.h4.desc':  { fr: 'Je développe avec l\'assistance de l\'IA — et j\'apprends à la piloter, pas à la subir.', en: 'I build with AI assistance — and I\'m learning to steer it, not just consume it.' },
 
   'about.p3': {
-    fr: `J'intègre l'IA générative à ma façon de travailler : ce portfolio a été conçu et développé avec l'assistance de Claude Code, du prototypage jusqu'à la mise en ligne sur mon propre nom de domaine. Ce que j'y apprends dépasse l'outil — cadrer une demande, relire ce qui est produit, repérer ce qui cloche et décider de ce qu'on garde. Je crois que savoir travailler avec ces outils, sans leur déléguer le jugement, devient une compétence à part entière : je la travaille comme les autres.`,
-    en: `I bring generative AI into the way I work: this portfolio was designed and built with the help of Claude Code, from prototype through to going live on my own domain. What I'm learning goes beyond the tool — framing a request, reviewing what comes back, spotting what's wrong and deciding what to keep. I believe knowing how to work with these tools, without handing over your judgement, is becoming a skill in its own right: I'm building it like any other.`
+    fr: `J'intègre l'IA générative à ma façon de travailler : ce portfolio a été conçu et développé avec l'assistance de Claude Code, du prototypage jusqu'à la mise en ligne sur mon propre nom de domaine.`,
+    en: `I bring generative AI into the way I work: this portfolio was designed and built with the help of Claude Code, from prototype through to going live on my own domain.`
+  },
+  'about.p4': {
+    fr: `Je cherche surtout à comprendre comment ces outils s'étendent. J'ai configuré mes propres serveurs MCP (Model Context Protocol) pour donner à l'assistant un accès direct à mon environnement de travail — dépôts GitHub, base de données — au lieu de faire des allers-retours manuels, et je me forme actuellement aux Agent Skills, qui permettent de lui transmettre des procédures réutilisables. Ce que j'en retire dépasse l'outil : cadrer une demande, relire ce qui est produit, repérer ce qui cloche et décider de ce qu'on garde. Savoir travailler avec l'IA sans lui déléguer le jugement devient une compétence à part entière — je la travaille comme les autres.`,
+    en: `What interests me most is how these tools can be extended. I've set up my own MCP (Model Context Protocol) servers to give the assistant direct access to my working environment — GitHub repositories, databases — instead of copying things back and forth by hand, and I'm currently learning about Agent Skills, which let you hand it reusable procedures. What I take from it goes beyond the tool: framing a request, reviewing what comes back, spotting what's wrong and deciding what to keep. Knowing how to work with AI without handing over your judgement is becoming a skill in its own right — I'm building it like any other.`
   },
 
   /* ---- SKILLS ---- */
@@ -233,8 +237,10 @@ Object.assign(translations, {
   'skills.group.methods':    { fr: 'Concepts',                    en: 'Concepts' },
 
   'skills.ai.assisted': { fr: "Développement assisté par IA", en: 'AI-assisted development' },
+  'skills.ai.mcp':      { fr: 'Serveurs MCP',                 en: 'MCP servers' },
   'skills.ai.prompt':   { fr: 'Prompt engineering',           en: 'Prompt engineering' },
   'skills.ai.review':   { fr: "Relecture critique de code IA", en: 'Critical review of AI output' },
+  'skills.ai.skills':   { fr: 'Agent Skills',                 en: 'Agent Skills' },
 
   'skills.m.automation': { fr: 'Automatisation de processus', en: 'Process automation' },
   'skills.m.api':        { fr: "Intégration d'API",           en: 'API integration' },
