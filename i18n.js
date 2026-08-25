@@ -95,6 +95,10 @@ const translations = {
 
   'footer.text': { fr: '© 2026 Boutarin Antoine —', en: '© 2026 Boutarin Antoine —' },
   'footer.contact': { fr: 'Contact', en: 'Contact' },
+  'footer.ai': {
+    fr: 'Site conçu et développé avec l\'assistance de Claude Code.',
+    en: 'Site designed and built with the help of Claude Code.'
+  },
 
   /* ---- PROJECTS ---- */
   'projects.tag':    { fr: '// Mes réalisations', en: '// My work' },
@@ -109,7 +113,8 @@ const translations = {
   'project.3.desc':  { fr: 'Jeu avec génération procédurale de l\'environnement via FastNoiseLite.', en: 'Game with procedurally generated environment using FastNoiseLite.' },
   'project.4.title': { fr: 'WatchList',               en: 'WatchList' },
   'project.4.desc':  { fr: 'Tracker de films et séries avec recherche TMDB, affiches et suivi épisode par épisode pour les séries.', en: 'Movie and TV tracker with TMDB search, posters, and per-episode tracking for series.' },
-  'project.status.progress': { fr: 'En cours', en: 'In progress' },
+  'project.status.progress': { fr: 'En cours — 2026', en: 'In progress — 2026' },
+  'project.tag.ai':  { fr: 'Développé avec l\'IA', en: 'Built with AI' },
   'project.btn':     { fr: 'Voir sur Itch.io →',      en: 'View on Itch.io →' },
   'project.btn.open': { fr: 'Ouvrir le projet →',     en: 'Open project →' },
   'project.close':   { fr: 'Fermer',                  en: 'Close' },
@@ -209,6 +214,13 @@ Object.assign(translations, {
   'about.h2.desc':  { fr: "C, C#, C++, Python — j'aime apprendre de nouveaux outils.", en: "C, C#, C++, Python — I enjoy picking up new tools." },
   'about.h3.title': { fr: 'Curieux & rigoureux',   en: 'Curious & rigorous' },
   'about.h3.desc':  { fr: 'J\'aime comprendre comment les choses fonctionnent en profondeur.', en: 'I like understanding how things work under the hood.' },
+  'about.h4.title': { fr: 'IA au quotidien',       en: 'AI in daily practice' },
+  'about.h4.desc':  { fr: 'Je développe avec l\'assistance de l\'IA — et j\'apprends à la piloter, pas à la subir.', en: 'I build with AI assistance — and I\'m learning to steer it, not just consume it.' },
+
+  'about.p3': {
+    fr: `J'intègre l'IA générative à ma façon de travailler : ce portfolio a été conçu et développé avec l'assistance de Claude Code, du prototypage jusqu'à la mise en ligne sur mon propre nom de domaine. Ce que j'y apprends dépasse l'outil — cadrer une demande, relire ce qui est produit, repérer ce qui cloche et décider de ce qu'on garde. Je crois que savoir travailler avec ces outils, sans leur déléguer le jugement, devient une compétence à part entière : je la travaille comme les autres.`,
+    en: `I bring generative AI into the way I work: this portfolio was designed and built with the help of Claude Code, from prototype through to going live on my own domain. What I'm learning goes beyond the tool — framing a request, reviewing what comes back, spotting what's wrong and deciding what to keep. I believe knowing how to work with these tools, without handing over your judgement, is becoming a skill in its own right: I'm building it like any other.`
+  },
 
   /* ---- SKILLS ---- */
   'skills.tag':   { fr: '// Compétences',  en: '// Skills' },
@@ -217,7 +229,12 @@ Object.assign(translations, {
   'skills.group.devtools':   { fr: 'Outils de développement',     en: 'Development tools' },
   'skills.group.platforms':  { fr: 'Environnements & plateformes', en: 'Environments & platforms' },
   'skills.group.management': { fr: 'Gestion & méthodes',          en: 'Version control & methods' },
+  'skills.group.ai':         { fr: 'IA & productivité',           en: 'AI & productivity' },
   'skills.group.methods':    { fr: 'Concepts',                    en: 'Concepts' },
+
+  'skills.ai.assisted': { fr: "Développement assisté par IA", en: 'AI-assisted development' },
+  'skills.ai.prompt':   { fr: 'Prompt engineering',           en: 'Prompt engineering' },
+  'skills.ai.review':   { fr: "Relecture critique de code IA", en: 'Critical review of AI output' },
 
   'skills.m.automation': { fr: 'Automatisation de processus', en: 'Process automation' },
   'skills.m.api':        { fr: "Intégration d'API",           en: 'API integration' },

@@ -37,7 +37,7 @@
 <main class="projects-grid">
 
   <div class="project-card">
-    <video class="project-video" controls muted playsinline>
+    <video class="project-video" controls muted playsinline preload="metadata">
       <source src="Img/Bears.mp4" type="video/mp4">
     </video>
     <div class="project-body">
@@ -51,22 +51,26 @@
     </div>
   </div>
 
-  <div class="project-card">
-    <video class="project-video" controls muted playsinline>
-      <source src="Img/pokelike.mp4" type="video/mp4">
-    </video>
+  <div class="project-card project-featured">
+    <div class="project-video">
+      <img src="Img/wattchlist.png" alt="Wattchlist"/>
+    </div>
     <div class="project-body">
-      <h2 data-i18n="project.2.title"></h2>
-      <p data-i18n="project.2.desc"></p>
+      <h2 data-i18n="project.4.title"></h2>
+      <p data-i18n="project.4.desc"></p>
       <div class="tags">
-        <span class="tag">C#</span>
-        <span class="tag">Visual Studio</span>
+        <span class="tag">HTML/CSS/JS</span>
+        <span class="tag">TMDB API</span>
+        <span class="tag">Cloudflare Worker</span>
+        <span class="tag tag-ai" data-i18n="project.tag.ai"></span>
+        <span class="tag" data-i18n="project.status.progress"></span>
       </div>
+      <a class="btn" href="https://watchlist.inatyxx.com" target="_blank" rel="noopener" data-i18n="project.btn.open"></a>
     </div>
   </div>
 
   <div class="project-card">
-    <video class="project-video" controls muted playsinline>
+    <video class="project-video" controls muted playsinline preload="metadata">
       <source src="Img/hungryShark.mp4" type="video/mp4">
     </video>
     <div class="project-body">
@@ -82,18 +86,16 @@
   </div>
 
   <div class="project-card">
-    <div class="project-video">
-      <img src="Img/wattchlist.png" alt="Wattchlist"/>
-    </div>
+    <video class="project-video" controls muted playsinline preload="metadata">
+      <source src="Img/pokelike.mp4" type="video/mp4">
+    </video>
     <div class="project-body">
-      <h2 data-i18n="project.4.title"></h2>
-      <p data-i18n="project.4.desc"></p>
+      <h2 data-i18n="project.2.title"></h2>
+      <p data-i18n="project.2.desc"></p>
       <div class="tags">
-        <span class="tag">HTML/CSS/JS</span>
-        <span class="tag">TMDB API</span>
-        <span class="tag" data-i18n="project.status.progress"></span>
+        <span class="tag">C#</span>
+        <span class="tag">Visual Studio</span>
       </div>
-      <a class="btn" href="https://watchlist.inatyxx.com" target="_blank" rel="noopener" data-i18n="project.btn.open"></a>
     </div>
   </div>
 
@@ -101,6 +103,7 @@
 
 <footer class="site-footer">
   <span data-i18n="footer.text"></span> <a href="contact.html" data-i18n="footer.contact"></a>
+  <p class="footer-ai" data-i18n="footer.ai"></p>
 </footer>
 
 <div class="project-modal-overlay" id="projectModalOverlay">

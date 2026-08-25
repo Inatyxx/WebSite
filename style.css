@@ -485,6 +485,16 @@ img { max-width: 100%; display: block; }
   object-fit: cover;
   display: block;
   background: #0a0d1f;
+  overflow: hidden;
+}
+
+/* Capture d'écran : même cadrage que les vidéos, ancrée en haut
+   pour garder l'en-tête de l'application visible */
+.project-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .project-body {
@@ -520,6 +530,19 @@ img { max-width: 100%; display: block; }
   border-radius: 6px;
   font-size: 0.78rem;
   color: var(--muted);
+}
+
+/* Projet mis en avant : le plus proche du profil visé */
+.project-featured {
+  border-color: rgba(91,62,255,0.4);
+  box-shadow: 0 0 0 1px rgba(91,62,255,0.12), 0 12px 36px rgba(0,0,0,0.28);
+}
+
+/* Tag « développé avec l'IA » */
+.tag-ai {
+  background: rgba(0,229,255,0.09);
+  border-color: rgba(0,229,255,0.28);
+  color: var(--accent-2);
 }
 
 .tag-link {
@@ -778,6 +801,13 @@ body.modal-open {
   font-size: 0.78rem;
   color: var(--muted);
   letter-spacing: 0.02em;
+}
+
+.footer-ai {
+  margin-top: 0.6rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+  opacity: 0.75;
 }
 
 .site-footer a {
