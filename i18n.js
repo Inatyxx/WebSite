@@ -6,11 +6,7 @@ const translations = {
 
   /* ---- INDEX ---- */
   'nav.home':        { fr: 'Accueil',    en: 'Home' },
-  'nav.about':       { fr: 'À propos',   en: 'About' },
   'nav.projects':    { fr: 'Projets',    en: 'Projects' },
-  'nav.formation':   { fr: 'Formation',  en: 'Education' },
-  'nav.experience':  { fr: 'Expérience', en: 'Experience' },
-  'nav.skills':      { fr: 'Compétences', en: 'Skills' },
   'nav.contact':     { fr: 'Contact',    en: 'Contact' },
 
   'hero.subtitle':   { fr: '// Game Programmer · G.Tech Lyon', en: '// Game Programmer · G.Tech Lyon' },
