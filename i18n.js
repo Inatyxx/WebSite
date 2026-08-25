@@ -84,7 +84,7 @@ const translations = {
   'contact.sub':     { fr: 'Retrouvez toutes mes informations ci-dessous.', en: 'Find all my details below.' },
 
   'contact.info.title':    { fr: 'Mes informations',  en: 'My details' },
-  'contact.info.address':  { fr: 'Adresse',           en: 'Address' },
+  'contact.info.location': { fr: 'Localisation',      en: 'Location' },
   'contact.info.phone':    { fr: 'Tél.',              en: 'Phone' },
   'contact.info.email':    { fr: 'Email',             en: 'Email' },
   'contact.info.linkedin': { fr: 'LinkedIn',          en: 'LinkedIn' },
