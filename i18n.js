@@ -11,14 +11,14 @@ const translations = {
 
   'hero.subtitle':   { fr: '// Étudiant ingénieur · ECE Lyon', en: '// Engineering student · ECE Lyon' },
   'hero.bio':        {
-    fr: `Passionné par le développement et les systèmes qui font tourner les organisations,
-         je vise aujourd'hui des postes de Chef de Projet en transformation digitale ou d'Ingénieur en automatisation industrielle.
-         Je suis actuellement en 1ère année du cycle ingénieur à l'ECE Lyon, Majeure Digital Transformation & Innovation,
-         après un Bachelor en développement de jeux vidéo à Gaming Campus Lyon.`,
-    en: `Passionate about development and the systems that keep organisations running,
-         I'm now aiming for roles as a Digital Transformation Project Manager or Industrial Automation Engineer.
-         I am currently in my 1st year of the engineering cycle at ECE Lyon, Digital Transformation & Innovation Major,
-         after a Bachelor's degree in video game development from Gaming Campus Lyon.`
+    fr: `Je suis en 1ʳᵉ année du cycle ingénieur à l'ECE Lyon, majeure Digital Transformation & Innovation,
+         après un Bachelor en développement de jeux vidéo à Gaming Campus Lyon.
+         Ce qui m'intéresse aujourd'hui, c'est l'automatisation et les outils internes :
+         je cherche un poste de chef de projet en transformation digitale ou d'ingénieur en automatisation industrielle.`,
+    en: `I'm in my first year of the engineering cycle at ECE Lyon, majoring in Digital Transformation & Innovation,
+         after a bachelor's degree in video game development at Gaming Campus Lyon.
+         What interests me now is automation and internal tooling:
+         I'm looking for a role as a digital transformation project manager or an industrial automation engineer.`
   },
   'hero.availability': {
     fr: 'Recherche un stage ou une alternance à partir de septembre 2026',
@@ -31,8 +31,8 @@ const translations = {
   'exp.tag':   { fr: '// Parcours professionnel', en: '// Professional experience' },
   'exp.title': { fr: 'Expérience',                en: 'Experience' },
   'exp.note':  {
-    fr: `Trois stages consécutifs autour d'un même fil conducteur : reprendre un processus existant et l'automatiser.`,
-    en: `Three consecutive internships around a single common thread: taking an existing process and automating it.`
+    fr: `Trois étés, trois entreprises, et à chaque fois le même type de mission : reprendre un processus qui tournait à la main et l'automatiser.`,
+    en: `Three summers, three companies, and each time the same kind of job: take a process that ran by hand and automate it.`
   },
   'exp.tag.team': { fr: 'Travail en équipe', en: 'Teamwork' },
 
@@ -99,10 +99,6 @@ const translations = {
 
   'footer.text': { fr: '© 2026 Boutarin Antoine —', en: '© 2026 Boutarin Antoine —' },
   'footer.contact': { fr: 'Contact', en: 'Contact' },
-  'footer.ai': {
-    fr: 'Site conçu et développé avec l\'assistance de Claude Code.',
-    en: 'Site designed and built with the help of Claude Code.'
-  },
 
   /* ---- PROJECTS ---- */
   'projects.tag':    { fr: '// Mes réalisations', en: '// My work' },
@@ -206,29 +202,29 @@ Object.assign(translations, {
   'about.tag':   { fr: '// Qui suis-je ?',  en: '// Who am I?' },
   'about.title': { fr: 'À propos',          en: 'About me' },
   'about.p1': {
-    fr: `Étudiant en 1ère année du cycle ingénieur à l'ECE Lyon (Majeure Digital Transformation & Innovation), je m'intéresse aux systèmes qui font tourner les organisations : automatisation, outils internes et projets techniques bien menés. J'ai commencé par un Bachelor en développement de jeux vidéo à Gaming Campus Lyon, qui m'a donné de solides bases en programmation et en résolution de problèmes.`,
-    en: `1st-year engineering student at ECE Lyon (Digital Transformation & Innovation Major), I'm interested in the systems that keep organisations running: automation, internal tooling and well-run technical projects. I started with a Bachelor's degree in video game development at Gaming Campus Lyon, which gave me a solid foundation in programming and problem-solving.`
+    fr: `J'ai commencé par un Bachelor en développement de jeux vidéo à Gaming Campus Lyon. J'y ai pris de bonnes bases en programmation, mais ce sont mes trois stages qui m'ont orienté ailleurs : à chaque fois, il s'agissait de reprendre un processus qui tournait à la main et de l'automatiser. C'est ce qui m'a décidé à rejoindre le cycle ingénieur de l'ECE Lyon, en majeure Digital Transformation & Innovation.`,
+    en: `I started with a bachelor's degree in video game development at Gaming Campus Lyon. It gave me solid programming foundations, but it was my three internships that pointed me somewhere else: every time, the job was to take a process that ran by hand and automate it. That's what made me join the engineering cycle at ECE Lyon, majoring in Digital Transformation & Innovation.`
   },
   'about.p2': {
-    fr: `En dehors du code, le sport tient une grande place dans mon quotidien — l'escalade et le snowboard sont mes deux disciplines de prédilection. J'aime les activités qui demandent à la fois de la technique et de la persévérance.`,
-    en: `Outside of code, sport is a big part of my daily life — climbing and snowboarding are my two disciplines of choice. I enjoy activities that require both technique and perseverance.`
+    fr: `En dehors du code, je grimpe et je fais du snowboard. Deux sports où on progresse lentement et où il faut s'y reprendre à beaucoup de fois avant que ça passe.`,
+    en: `Outside of code, I climb and I snowboard. Two sports where progress is slow and you have to try again a lot of times before it works.`
   },
   'about.h1.title': { fr: 'Automatisation & systèmes', en: 'Automation & systems' },
-  'about.h1.desc':  { fr: 'Concevoir des outils et process qui font gagner du temps aux équipes.', en: 'Designing tools and processes that save teams time.' },
+  'about.h1.desc':  { fr: 'Automatiser les tâches répétitives et outiller les équipes.', en: 'Automating repetitive tasks and building internal tools.' },
   'about.h2.title': { fr: 'Polyvalent',            en: 'Versatile' },
   'about.h2.desc':  { fr: "C, C#, C++, Python — j'aime apprendre de nouveaux outils.", en: "C, C#, C++, Python — I enjoy picking up new tools." },
   'about.h3.title': { fr: 'Curieux & rigoureux',   en: 'Curious & rigorous' },
-  'about.h3.desc':  { fr: 'J\'aime comprendre comment les choses fonctionnent en profondeur.', en: 'I like understanding how things work under the hood.' },
+  'about.h3.desc':  { fr: 'J\'ai besoin de comprendre comment ça marche avant de m\'en servir.', en: 'I need to understand how something works before I use it.' },
   'about.h4.title': { fr: 'IA au quotidien',       en: 'AI in daily practice' },
-  'about.h4.desc':  { fr: 'Je développe avec l\'assistance de l\'IA — et j\'apprends à la piloter, pas à la subir.', en: 'I build with AI assistance — and I\'m learning to steer it, not just consume it.' },
+  'about.h4.desc':  { fr: 'Je code avec l\'IA au quotidien, et je configure mes propres outils autour.', en: 'I code with AI every day, and set up my own tooling around it.' },
 
   'about.p3': {
-    fr: `J'intègre l'IA générative à ma façon de travailler : ce portfolio a été conçu et développé avec l'assistance de Claude Code, du prototypage jusqu'à la mise en ligne sur mon propre nom de domaine.`,
-    en: `I bring generative AI into the way I work: this portfolio was designed and built with the help of Claude Code, from prototype through to going live on my own domain.`
+    fr: `Ce site a été développé avec Claude Code, du premier prototype jusqu'à la mise en ligne sur mon nom de domaine.`,
+    en: `I built this site with Claude Code, from the first prototype through to putting it live on my own domain.`
   },
   'about.p4': {
-    fr: `Je cherche surtout à comprendre comment ces outils s'étendent. J'ai configuré mes propres serveurs MCP (Model Context Protocol) pour donner à l'assistant un accès direct à mon environnement de travail — dépôts GitHub, base de données — au lieu de faire des allers-retours manuels, et je me forme actuellement aux Agent Skills, qui permettent de lui transmettre des procédures réutilisables. Ce que j'en retire dépasse l'outil : cadrer une demande, relire ce qui est produit, repérer ce qui cloche et décider de ce qu'on garde. Savoir travailler avec l'IA sans lui déléguer le jugement devient une compétence à part entière — je la travaille comme les autres.`,
-    en: `What interests me most is how these tools can be extended. I've set up my own MCP (Model Context Protocol) servers to give the assistant direct access to my working environment — GitHub repositories, databases — instead of copying things back and forth by hand, and I'm currently learning about Agent Skills, which let you hand it reusable procedures. What I take from it goes beyond the tool: framing a request, reviewing what comes back, spotting what's wrong and deciding what to keep. Knowing how to work with AI without handing over your judgement is becoming a skill in its own right — I'm building it like any other.`
+    fr: `Ce qui m'intéresse surtout, c'est de voir jusqu'où on peut pousser ces outils. J'ai configuré mes propres serveurs MCP (Model Context Protocol) pour brancher l'assistant directement sur mes dépôts GitHub et mes bases de données, au lieu de copier-coller dans les deux sens, et je regarde en ce moment les Agent Skills. Le plus dur n'est pas l'outil : c'est de bien formuler ce qu'on demande, et de relire sérieusement ce qui sort.`,
+    en: `What I'm mainly interested in is seeing how far these tools can be pushed. I set up my own MCP (Model Context Protocol) servers so the assistant plugs straight into my GitHub repos and databases instead of me copying things back and forth, and I'm currently looking into Agent Skills. The hard part isn't the tool: it's asking for the right thing, and properly reviewing what comes back.`
   },
 
   /* ---- SKILLS ---- */
