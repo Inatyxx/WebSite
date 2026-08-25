@@ -478,15 +478,6 @@ img { max-width: 100%; display: block; }
   letter-spacing: -0.03em;
 }
 
-.section-tag {
-  font-family: 'Space Mono', monospace;
-  font-size: 0.72rem;
-  color: var(--accent-2);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.6rem;
-}
-
 .projects-header p {
   color: var(--muted);
   margin-top: 0.6rem;
@@ -937,7 +928,6 @@ body.modal-open {
   font-size: 1.8rem;
   font-weight: 800;
   letter-spacing: -0.03em;
-  margin-top: 0.4rem;
 }
 
 /* =============================================

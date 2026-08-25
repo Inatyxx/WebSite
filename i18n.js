@@ -28,7 +28,6 @@ const translations = {
   'hero.cta.contact':  { fr: 'Me contacter',     en: 'Get in touch' },
 
   /* ---- EXPÉRIENCE ---- */
-  'exp.tag':   { fr: '// Parcours professionnel', en: '// Professional experience' },
   'exp.title': { fr: 'Expérience',                en: 'Experience' },
   'exp.note':  {
     fr: `Trois étés, trois entreprises, et à chaque fois le même type de mission : reprendre un processus qui tournait à la main et l'automatiser.`,
@@ -73,8 +72,7 @@ const translations = {
   },
 
   /* ---- FORMATION ---- */
-  'form.tag':   { fr: '// Formation',        en: '// Education' },
-  'form.title': { fr: 'Parcours académique', en: 'Academic background' },
+  'form.title': { fr: 'Formation',           en: 'Education' },
 
   'form.1.period': { fr: '2026 – 2029', en: '2026 – 2029' },
   'form.1.school': { fr: 'ECE Lyon',    en: 'ECE Lyon' },
@@ -101,7 +99,6 @@ const translations = {
   'footer.contact': { fr: 'Contact', en: 'Contact' },
 
   /* ---- PROJECTS ---- */
-  'projects.tag':    { fr: '// Mes réalisations', en: '// My work' },
   'projects.title':  { fr: 'Projets',             en: 'Projects' },
   'projects.sub':    { fr: 'Un aperçu de mes créations scolaires et personnelles.', en: 'A selection of my academic and personal projects.' },
 
@@ -120,7 +117,6 @@ const translations = {
   'project.close':   { fr: 'Fermer',                  en: 'Close' },
 
   /* ---- CONTACT ---- */
-  'contact.tag':     { fr: '// Entrons en contact', en: '// Let\'s connect' },
   'contact.title':   { fr: 'Contact',               en: 'Contact' },
   'contact.sub':     { fr: 'Retrouvez toutes mes informations ci-dessous.', en: 'Find all my details below.' },
 
@@ -199,8 +195,7 @@ document.addEventListener('DOMContentLoaded', initLangSwitcher);
 
 /* ---- ABOUT ---- */
 Object.assign(translations, {
-  'about.tag':   { fr: '// Qui suis-je ?',  en: '// Who am I?' },
-  'about.title': { fr: 'À propos',          en: 'About me' },
+  'about.title': { fr: 'Qui suis-je ?',     en: 'Who am I?' },
   'about.p1': {
     fr: `J'ai commencé par un Bachelor en développement de jeux vidéo à Gaming Campus Lyon. J'y ai pris de bonnes bases en programmation, mais ce sont mes trois stages qui m'ont orienté ailleurs : à chaque fois, il s'agissait de reprendre un processus qui tournait à la main et de l'automatiser. C'est ce qui m'a décidé à rejoindre le cycle ingénieur de l'ECE Lyon, en majeure Digital Transformation & Innovation.`,
     en: `I started with a bachelor's degree in video game development at Gaming Campus Lyon. It gave me solid programming foundations, but it was my three internships that pointed me somewhere else: every time, the job was to take a process that ran by hand and automate it. That's what made me join the engineering cycle at ECE Lyon, majoring in Digital Transformation & Innovation.`
@@ -228,8 +223,7 @@ Object.assign(translations, {
   },
 
   /* ---- SKILLS ---- */
-  'skills.tag':   { fr: '// Compétences',  en: '// Skills' },
-  'skills.title': { fr: 'Stack technique', en: 'Tech stack' },
+  'skills.title': { fr: 'Compétences',     en: 'Skills' },
   'skills.group.languages':  { fr: 'Langages',                    en: 'Languages' },
   'skills.group.devtools':   { fr: 'Outils de développement',     en: 'Development tools' },
   'skills.group.platforms':  { fr: 'Environnements & plateformes', en: 'Environments & platforms' },
