@@ -66,6 +66,7 @@ const translations = {
   'project.status.progress': { fr: 'En cours', en: 'In progress' },
   'project.btn':     { fr: 'Voir sur Itch.io →',      en: 'View on Itch.io →' },
   'project.btn.open': { fr: 'Ouvrir le projet →',     en: 'Open project →' },
+  'project.close':   { fr: 'Fermer',                  en: 'Close' },
 
   /* ---- CONTACT ---- */
   'contact.tag':     { fr: '// Entrons en contact', en: '// Let\'s connect' },
