@@ -18,8 +18,6 @@
       <ul>
         <li><a href="index.html"    data-i18n="nav.home"></a></li>
         <li><a href="projects.html" data-i18n="nav.projects"></a></li>
-        <li><a href="index.html#formation"  data-i18n="nav.formation"></a></li>
-        <li><a href="index.html#experience" data-i18n="nav.experience"></a></li>
         <li><a class="primary-btn" href="contact.html" data-i18n="nav.contact"></a></li>
       </ul>
       <div class="lang-switcher">
@@ -105,6 +103,15 @@
   <span data-i18n="footer.text"></span> <a href="contact.html" data-i18n="footer.contact"></a>
 </footer>
 
+<div class="project-modal-overlay" id="projectModalOverlay">
+  <div class="project-modal" id="projectModal">
+    <button type="button" class="project-modal-close" id="projectModalClose" aria-label="Fermer">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="project-modal-body" id="projectModalBody"></div>
+  </div>
+</div>
+
 <script src="i18n.js"></script>
 <script>
   const burger = document.getElementById('burger');
@@ -113,6 +120,97 @@
     burger.classList.toggle('open');
     nav.classList.toggle('open');
   });
+
+  /* =============================================
+     PROJECT MODAL (click-to-zoom)
+     ============================================= */
+  (function () {
+    const overlay   = document.getElementById('projectModalOverlay');
+    const modal     = document.getElementById('projectModal');
+    const modalBody = document.getElementById('projectModalBody');
+    const closeBtn  = document.getElementById('projectModalClose');
+    const grid      = document.querySelector('.projects-grid');
+    const cards     = grid ? Array.from(grid.querySelectorAll(':scope > .project-card')) : [];
+
+    if (!overlay || !modal || !modalBody || !closeBtn || !grid || !cards.length) return;
+
+    let activeCard   = null; // card currently shown in the modal
+    let originalNext = null; // sibling to restore card position on close
+
+    function updateCloseLabel() {
+      if (typeof t === 'function') {
+        closeBtn.setAttribute('aria-label', t('project.close'));
+      }
+    }
+    updateCloseLabel();
+    document.querySelectorAll('.lang-btn').forEach((btn) => {
+      btn.addEventListener('click', updateCloseLabel);
+    });
+
+    function openModal(card) {
+      if (activeCard) return;
+      activeCard   = card;
+      originalNext = card.nextElementSibling;
+
+      card.classList.add('in-modal');
+      modalBody.appendChild(card);
+
+      overlay.classList.add('open');
+      document.body.classList.add('modal-open');
+      closeBtn.focus();
+    }
+
+    function closeModal() {
+      if (!activeCard) return;
+      const card = activeCard;
+      activeCard = null;
+
+      overlay.classList.remove('open');
+      document.body.classList.remove('modal-open');
+
+      const video = card.querySelector('video');
+      if (video) video.pause();
+
+      // Wait for the closing transition before moving the node back,
+      // so the card doesn't visibly "jump" out of the modal mid-animation.
+      window.setTimeout(() => {
+        card.classList.remove('in-modal');
+        if (originalNext && originalNext.parentNode === grid) {
+          grid.insertBefore(card, originalNext);
+        } else {
+          grid.appendChild(card);
+        }
+        originalNext = null;
+      }, 300);
+    }
+
+    cards.forEach((card) => {
+      card.setAttribute('tabindex', '0');
+
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('a, button')) return;
+        openModal(card);
+      });
+
+      card.addEventListener('keydown', (e) => {
+        if (e.target !== card) return;
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openModal(card);
+        }
+      });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) closeModal();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && activeCard) closeModal();
+    });
+  })();
 </script>
 </body>
 </html>

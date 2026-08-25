@@ -6,11 +6,7 @@ const translations = {
 
   /* ---- INDEX ---- */
   'nav.home':        { fr: 'Accueil',    en: 'Home' },
-  'nav.about':       { fr: 'À propos',   en: 'About' },
   'nav.projects':    { fr: 'Projets',    en: 'Projects' },
-  'nav.formation':   { fr: 'Formation',  en: 'Education' },
-  'nav.experience':  { fr: 'Expérience', en: 'Experience' },
-  'nav.skills':      { fr: 'Compétences', en: 'Skills' },
   'nav.contact':     { fr: 'Contact',    en: 'Contact' },
 
   'hero.subtitle':   { fr: '// Game Programmer · G.Tech Lyon', en: '// Game Programmer · G.Tech Lyon' },
@@ -70,6 +66,7 @@ const translations = {
   'project.status.progress': { fr: 'En cours', en: 'In progress' },
   'project.btn':     { fr: 'Voir sur Itch.io →',      en: 'View on Itch.io →' },
   'project.btn.open': { fr: 'Ouvrir le projet →',     en: 'Open project →' },
+  'project.close':   { fr: 'Fermer',                  en: 'Close' },
 
   /* ---- CONTACT ---- */
   'contact.tag':     { fr: '// Entrons en contact', en: '// Let\'s connect' },
