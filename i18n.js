@@ -92,6 +92,7 @@ const translations = {
   'contact.cv.title': { fr: 'Mon CV',                              en: 'My Resume' },
   'contact.cv.desc':  { fr: 'Téléchargez mon CV pour en savoir plus sur mon parcours.', en: 'Download my resume to learn more about my background.' },
   'contact.cv.btn':   { fr: 'Télécharger le CV →',                 en: 'Download Resume →' },
+  'contact.cv.href':  { fr: 'Img/CV Antoine Boutarin - FR.pdf',     en: 'Img/CV Antoine Boutarin - EN.pdf' },
 };
 
 /* =============================================
