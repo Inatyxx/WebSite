@@ -213,17 +213,22 @@ Object.assign(translations, {
   /* ---- SKILLS ---- */
   'skills.tag':   { fr: '// Compétences',  en: '// Skills' },
   'skills.title': { fr: 'Stack technique', en: 'Tech stack' },
-  'skills.group.languages': { fr: 'Langages',                    en: 'Languages' },
-  'skills.group.devtools':  { fr: 'Outils de développement',     en: 'Development tools' },
-  'skills.group.platforms': { fr: 'Environnements & plateformes', en: 'Environments & platforms' },
-  'skills.group.methods':   { fr: 'Méthodes & concepts',         en: 'Methods & concepts' },
+  'skills.group.languages':  { fr: 'Langages',                    en: 'Languages' },
+  'skills.group.devtools':   { fr: 'Outils de développement',     en: 'Development tools' },
+  'skills.group.platforms':  { fr: 'Environnements & plateformes', en: 'Environments & platforms' },
+  'skills.group.management': { fr: 'Gestion & méthodes',          en: 'Version control & methods' },
+  'skills.group.methods':    { fr: 'Concepts',                    en: 'Concepts' },
 
   'skills.m.automation': { fr: 'Automatisation de processus', en: 'Process automation' },
   'skills.m.api':        { fr: "Intégration d'API",           en: 'API integration' },
+  'skills.m.oop':        { fr: 'POO',                         en: 'OOP' },
   'skills.m.tests':      { fr: 'Tests automatisés',           en: 'Automated testing' },
   'skills.m.doc':        { fr: 'Documentation technique',     en: 'Technical documentation' },
   'skills.m.gdpr':       { fr: 'Conformité RGPD',             en: 'GDPR compliance' },
+  'skills.m.agile':      { fr: 'Méthodes agiles',             en: 'Agile methods' },
+  'skills.m.waterfall':  { fr: 'Cycle en V / cascade',        en: 'Waterfall / V-model' },
 
-  'skills.legend.hot': { fr: 'Maîtrisé',    en: 'Proficient' },
-  'skills.legend.mid': { fr: 'En pratique', en: 'Practising' },
+  'skills.legend.hot':  { fr: 'Maîtrisé',    en: 'Proficient' },
+  'skills.legend.mid':  { fr: 'En pratique', en: 'Practising' },
+  'skills.legend.soft': { fr: 'Notions',     en: 'Familiar' },
 });

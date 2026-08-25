@@ -994,6 +994,12 @@ body.modal-open {
   color: #7dd3fc;
 }
 
+.pill-soft {
+  background: rgba(255,255,255,0.04);
+  border-color: rgba(255,255,255,0.12);
+  color: var(--muted);
+}
+
 .skill-legend {
   display: flex;
   gap: 1.5rem;
@@ -1020,6 +1026,12 @@ body.modal-open {
 .pill-dot.pill-mid {
   background: rgba(0,229,255,0.15);
   border-color: rgba(0,229,255,0.4);
+  padding: 0;
+}
+
+.pill-dot.pill-soft {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.22);
   padding: 0;
 }
 
