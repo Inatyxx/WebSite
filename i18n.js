@@ -20,6 +20,10 @@ const translations = {
          I am currently in my 1st year of the engineering cycle at ECE Lyon, Digital Transformation & Innovation Major,
          after a Bachelor's degree in video game development from Gaming Campus Lyon.`
   },
+  'hero.availability': {
+    fr: 'Recherche un stage ou une alternance à partir de septembre 2026',
+    en: 'Looking for an internship or apprenticeship from September 2026'
+  },
   'hero.cta.projects': { fr: 'Voir mes projets', en: 'See my projects' },
   'hero.cta.contact':  { fr: 'Me contacter',     en: 'Get in touch' },
 
@@ -129,6 +133,7 @@ const translations = {
   'contact.info.phone':    { fr: 'Tél.',              en: 'Phone' },
   'contact.info.email':    { fr: 'Email',             en: 'Email' },
   'contact.info.linkedin': { fr: 'LinkedIn',          en: 'LinkedIn' },
+  'contact.info.github':   { fr: 'GitHub',            en: 'GitHub' },
 
   'contact.cv.title': { fr: 'Mon CV',                              en: 'My Resume' },
   'contact.cv.desc':  { fr: 'Téléchargez mon CV pour en savoir plus sur mon parcours.', en: 'Download my resume to learn more about my background.' },
