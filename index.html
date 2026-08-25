@@ -34,7 +34,6 @@
   <div class="hero">
     <div class="container hero-inner">
 
-      <!-- Gauche : profil + bio + highlights -->
       <div class="hero-content">
         <div class="profile-block">
           <img class="hero-avatar" src="Img/Moi.png" alt="Antoine Boutarin" />
@@ -46,58 +45,149 @@
 
         <p class="hero-bio" data-i18n="hero.bio"></p>
 
-        <div class="hero-highlights">
-          <div class="highlight-card">
-            <span class="highlight-icon">⚙️</span>
-            <div>
-              <strong data-i18n="about.h1.title"></strong>
-              <p data-i18n="about.h1.desc"></p>
-            </div>
-          </div>
-          <div class="highlight-card">
-            <span class="highlight-icon">🛠️</span>
-            <div>
-              <strong data-i18n="about.h2.title"></strong>
-              <p data-i18n="about.h2.desc"></p>
-            </div>
-          </div>
-          <div class="highlight-card">
-            <span class="highlight-icon">🔍</span>
-            <div>
-              <strong data-i18n="about.h3.title"></strong>
-              <p data-i18n="about.h3.desc"></p>
-            </div>
-          </div>
-        </div>
-
         <div class="hero-cta">
           <a class="primary-btn" href="projects.html" data-i18n="hero.cta.projects"></a>
           <a class="btn-outline"  href="contact.html" data-i18n="hero.cta.contact"></a>
         </div>
       </div>
 
-      <!-- Droite : formation + expérience -->
-      <div class="hero-panels">
-        <div id="formation" class="panel">
-          <p class="panel-label" data-i18n="panel.formation.label"></p>
-          <h3 data-i18n="panel.formation.title"></h3>
-          <p data-i18n="panel.formation.1" data-i18n-html></p>
-          <p data-i18n="panel.formation.2" data-i18n-html></p>
-          <p data-i18n="panel.formation.3" data-i18n-html></p>
+      <div class="hero-highlights">
+        <div class="highlight-card">
+          <span class="highlight-icon">⚙️</span>
+          <div>
+            <strong data-i18n="about.h1.title"></strong>
+            <p data-i18n="about.h1.desc"></p>
+          </div>
         </div>
-
-        <div id="experience" class="panel">
-          <p class="panel-label" data-i18n="panel.experience.label"></p>
-          <h3 data-i18n="panel.experience.title"></h3>
-          <p data-i18n="panel.experience.1" data-i18n-html></p>
-          <p data-i18n="panel.experience.2" data-i18n-html></p>
-          <p data-i18n="panel.experience.3" data-i18n-html></p>
-          <p data-i18n="panel.experience.4" data-i18n-html></p>
+        <div class="highlight-card">
+          <span class="highlight-icon">🛠️</span>
+          <div>
+            <strong data-i18n="about.h2.title"></strong>
+            <p data-i18n="about.h2.desc"></p>
+          </div>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">🔍</span>
+          <div>
+            <strong data-i18n="about.h3.title"></strong>
+            <p data-i18n="about.h3.desc"></p>
+          </div>
         </div>
       </div>
 
     </div>
   </div>
+
+  <!-- EXPÉRIENCE -->
+  <section id="experience" class="experience-section container">
+    <div class="section-header">
+      <p class="section-tag" data-i18n="exp.tag"></p>
+      <h2 data-i18n="exp.title"></h2>
+      <p class="section-note" data-i18n="exp.note"></p>
+    </div>
+
+    <div class="exp-list">
+
+      <article class="exp-item">
+        <div class="exp-meta">
+          <p class="exp-period" data-i18n="exp.1.period"></p>
+          <p class="exp-org" data-i18n="exp.1.org"></p>
+          <p class="exp-place" data-i18n="exp.1.place"></p>
+        </div>
+        <div class="exp-body">
+          <h3 data-i18n="exp.1.role"></h3>
+          <p data-i18n="exp.1.desc"></p>
+          <div class="tags">
+            <span class="tag">C</span>
+            <span class="tag">XLSX / Open XML</span>
+            <span class="tag">Tests automatisés</span>
+            <span class="tag">Windows</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="exp-item">
+        <div class="exp-meta">
+          <p class="exp-period" data-i18n="exp.2.period"></p>
+          <p class="exp-org" data-i18n="exp.2.org"></p>
+          <p class="exp-place" data-i18n="exp.2.place"></p>
+        </div>
+        <div class="exp-body">
+          <h3 data-i18n="exp.2.role"></h3>
+          <p data-i18n="exp.2.desc"></p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">API REST</span>
+            <span class="tag">Microsoft Graph</span>
+            <span class="tag">SharePoint</span>
+            <span class="tag">RGPD</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="exp-item">
+        <div class="exp-meta">
+          <p class="exp-period" data-i18n="exp.3.period"></p>
+          <p class="exp-org" data-i18n="exp.3.org"></p>
+          <p class="exp-place" data-i18n="exp.3.place"></p>
+        </div>
+        <div class="exp-body">
+          <h3 data-i18n="exp.3.role"></h3>
+          <p data-i18n="exp.3.desc"></p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">API REST</span>
+            <span class="tag">RedCap</span>
+            <span class="tag">Dashboards</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="exp-item exp-award">
+        <div class="exp-meta">
+          <p class="exp-period" data-i18n="exp.4.period"></p>
+          <p class="exp-org" data-i18n="exp.4.org"></p>
+          <p class="exp-place" data-i18n="exp.4.place"></p>
+        </div>
+        <div class="exp-body">
+          <h3 data-i18n="exp.4.role"></h3>
+          <p data-i18n="exp.4.desc"></p>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag" data-i18n="exp.tag.team"></span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section id="formation" class="formation-section container">
+    <div class="section-header">
+      <p class="section-tag" data-i18n="form.tag"></p>
+      <h2 data-i18n="form.title"></h2>
+    </div>
+
+    <div class="formation-grid">
+      <div class="formation-card">
+        <p class="formation-period" data-i18n="form.1.period"></p>
+        <h3 data-i18n="form.1.school"></h3>
+        <p class="formation-detail" data-i18n="form.1.detail"></p>
+      </div>
+      <div class="formation-card">
+        <p class="formation-period" data-i18n="form.2.period"></p>
+        <h3 data-i18n="form.2.school"></h3>
+        <p class="formation-detail" data-i18n="form.2.detail"></p>
+      </div>
+      <div class="formation-card">
+        <p class="formation-period" data-i18n="form.3.period"></p>
+        <h3 data-i18n="form.3.school"></h3>
+        <p class="formation-detail" data-i18n="form.3.detail"></p>
+      </div>
+    </div>
+  </section>
 
   <!-- À PROPOS -->
   <section id="about" class="about-section container">
@@ -147,38 +237,43 @@
       <div class="skill-group">
         <p class="skill-group-label" data-i18n="skills.group.languages"></p>
         <div class="skill-pills">
-          <span class="skill-pill pill-hot">C#</span>
           <span class="skill-pill pill-hot">Python</span>
+          <span class="skill-pill pill-hot">C</span>
+          <span class="skill-pill pill-hot">C#</span>
           <span class="skill-pill pill-mid">C++</span>
-          <span class="skill-pill pill-mid">C</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <p class="skill-group-label" data-i18n="skills.group.systems"></p>
-        <div class="skill-pills">
-          <span class="skill-pill pill-hot">Windows</span>
-          <span class="skill-pill pill-mid">Linux</span>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <p class="skill-group-label" data-i18n="skills.group.tools"></p>
+        <p class="skill-group-label" data-i18n="skills.group.devtools"></p>
         <div class="skill-pills">
           <span class="skill-pill pill-hot">Git / GitHub</span>
           <span class="skill-pill pill-hot">Visual Studio Code</span>
           <span class="skill-pill pill-mid">Visual Studio</span>
           <span class="skill-pill pill-mid">Rider</span>
+          <span class="skill-pill pill-mid">Unity</span>
         </div>
       </div>
 
       <div class="skill-group">
-        <p class="skill-group-label" data-i18n="skills.group.concepts"></p>
+        <p class="skill-group-label" data-i18n="skills.group.platforms"></p>
         <div class="skill-pills">
+          <span class="skill-pill pill-hot">Windows</span>
+          <span class="skill-pill pill-mid">Linux</span>
+          <span class="skill-pill pill-mid">Microsoft 365 / SharePoint</span>
+          <span class="skill-pill pill-mid">RedCap</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <p class="skill-group-label" data-i18n="skills.group.methods"></p>
+        <div class="skill-pills">
+          <span class="skill-pill pill-hot" data-i18n="skills.m.automation"></span>
+          <span class="skill-pill pill-hot" data-i18n="skills.m.api"></span>
           <span class="skill-pill pill-hot">POO</span>
-          <span class="skill-pill pill-mid">Tests automatisés</span>
-          <span class="skill-pill pill-mid">Documentation technique</span>
-          <span class="skill-pill pill-mid">Automatisation</span>
+          <span class="skill-pill pill-mid" data-i18n="skills.m.tests"></span>
+          <span class="skill-pill pill-mid" data-i18n="skills.m.doc"></span>
+          <span class="skill-pill pill-mid" data-i18n="skills.m.gdpr"></span>
         </div>
       </div>
     </div>

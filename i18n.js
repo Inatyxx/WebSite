@@ -23,38 +23,74 @@ const translations = {
   'hero.cta.projects': { fr: 'Voir mes projets', en: 'See my projects' },
   'hero.cta.contact':  { fr: 'Me contacter',     en: 'Get in touch' },
 
-  'panel.formation.label': { fr: '// Formation',          en: '// Education' },
-  'panel.formation.title': { fr: 'Parcours académique',   en: 'Academic background' },
-  'panel.formation.1':     {
-    fr: `<strong>2026 – 2029 · Cycle ingénieur — ECE Lyon</strong><br>1ère année, Majeure Digital Transformation & Innovation.`,
-    en: `<strong>2026 – 2029 · Engineering cycle — ECE Lyon</strong><br>1st year, Digital Transformation & Innovation Major.`
+  /* ---- EXPÉRIENCE ---- */
+  'exp.tag':   { fr: '// Parcours professionnel', en: '// Professional experience' },
+  'exp.title': { fr: 'Expérience',                en: 'Experience' },
+  'exp.note':  {
+    fr: `Trois stages consécutifs autour d'un même fil conducteur : reprendre un processus existant et l'automatiser.`,
+    en: `Three consecutive internships around a single common thread: taking an existing process and automating it.`
   },
-  'panel.formation.2':     {
-    fr: `<strong>2023 – 2026 · Bachelor G.Tech — Gaming Campus Lyon</strong><br>Développement Gameplay, diplôme obtenu.`,
-    en: `<strong>2023 – 2026 · Bachelor G.Tech — Gaming Campus Lyon</strong><br>Gameplay Development track, degree awarded.`
-  },
-  'panel.formation.3':     {
-    fr: `<strong>2022 – 2023 · Lycée Vaugelas, Chambéry</strong><br>Baccalauréat général — Spécialités Maths & NSI, Mention Assez Bien.`,
-    en: `<strong>2022 – 2023 · Lycée Vaugelas, Chambéry</strong><br>French high-school diploma — Maths & CS specialties, Honourable Mention.`
+  'exp.tag.team': { fr: 'Travail en équipe', en: 'Teamwork' },
+
+  'exp.1.period': { fr: 'Mai – Août 2026',  en: 'May – August 2026' },
+  'exp.1.org':    { fr: 'Ciril Group',      en: 'Ciril Group' },
+  'exp.1.place':  { fr: 'Lyon · Stage de 3ᵉ année', en: 'Lyon · 3rd-year internship' },
+  'exp.1.role':   { fr: `Modernisation d'un générateur d'états tableur`, en: 'Modernising a spreadsheet report generator' },
+  'exp.1.desc':   {
+    fr: `Au sein de l'atelier de développement « toolkit », utilisé par les produits de la gamme Ciril : remplacement du format de sortie SYLK par le format XLSX (Excel Open XML) dans l'outil de production d'états. Rédaction et automatisation d'une suite de tests couvrant les fonctionnalités migrées, puis documentation du travail réalisé pour faciliter le transfert de connaissances. Développement en C, sous Windows et Linux.`,
+    en: `Within the "toolkit" development workshop used across the Ciril product range: replacing the legacy SYLK output format with XLSX (Excel Open XML) in the report-production tool. Wrote and automated a test suite covering the migrated features, then documented the work to support knowledge transfer. Developed in C, on both Windows and Linux.`
   },
 
-  'panel.experience.label': { fr: '// Expérience',        en: '// Experience' },
-  'panel.experience.title': { fr: 'Stages & distinctions', en: 'Internships & awards' },
-  'panel.experience.1': {
-    fr: `<strong>Été 2026 · CirilGroup</strong><br>Au sein de l'atelier de développement "toolkit" (gamme Ciril), modernisation de l'outil de génération d'états — remplacement du format SYLK par XLSX — en C sous Windows et Linux, avec rédaction et automatisation des tests et documentation du travail pour le transfert de connaissances.`,
-    en: `<strong>Summer 2026 · CirilGroup</strong><br>Within the "toolkit" development workshop (Ciril product range), modernised the report-generation tool — replacing the SYLK format with XLSX — in C on Windows and Linux, writing and automating the test suite and documenting the work for knowledge transfer.`
+  'exp.2.period': { fr: 'Mai – Juillet 2025', en: 'May – July 2025' },
+  'exp.2.org':    { fr: 'Groupe Eurex',       en: 'Eurex Group' },
+  'exp.2.place':  { fr: 'Expertise comptable · Stage de 2ᵉ année', en: 'Accountancy firm · 2nd-year internship' },
+  'exp.2.role':   { fr: 'Automatisation du traitement des DSN', en: 'Automating payroll-declaration processing' },
+  'exp.2.desc':   {
+    fr: `Développement de scripts Python pour automatiser le traitement des DSN : appels aux API JDC, Microsoft Graph et LockSelf, gestion des tokens d'authentification, anonymisation RGPD des données et transfert automatisé vers SharePoint. Structuration du code, mise en place du logging et rédaction de la documentation technique.`,
+    en: `Built Python scripts to automate the processing of French payroll declarations (DSN): calls to the JDC, Microsoft Graph and LockSelf APIs, authentication-token handling, GDPR anonymisation of the data and automated transfer to SharePoint. Structured the codebase, set up logging and wrote the technical documentation.`
   },
-  'panel.experience.2': {
-    fr: `<strong>Mai – Juillet 2025 · Eurex CFE</strong><br>Scripts Python pour automatiser le traitement des DSN : API JDC, Microsoft Graph, LockSelf, gestion des tokens, anonymisation RGPD et transfert vers SharePoint.`,
-    en: `<strong>May – July 2025 · Eurex CFE</strong><br>Python scripts to automate DSN processing: JDC, Microsoft Graph & LockSelf APIs, token management, GDPR anonymisation and automated SharePoint transfer.`
+
+  'exp.3.period': { fr: 'Juin – Juillet 2024', en: 'June – July 2024' },
+  'exp.3.org':    { fr: 'CIRC (OMS)',          en: 'IARC (WHO)' },
+  'exp.3.place':  { fr: 'Lyon · Stage de 1ʳᵉ année', en: 'Lyon · 1st-year internship' },
+  'exp.3.role':   { fr: 'Dashboards et automatisation de données cliniques', en: 'Dashboards and clinical-data automation' },
+  'exp.3.desc':   {
+    fr: `Initiation au produit RedCap, puis recherche de solutions pour transférer des bases de données entre les différents serveurs du centre. Création et modélisation de dashboards de visualisation à l'aide d'une API et du langage Python, et automatisation de l'insertion d'images cliniques dans une base RedCap.`,
+    en: `Onboarding onto the RedCap platform, then researching ways to migrate databases between the centre's servers. Designed and built visualisation dashboards using an API and Python, and automated the insertion of clinical images into a RedCap database.`
   },
-  'panel.experience.3': {
-    fr: `<strong>Juin – Juillet 2024 · CIRC (OMS)</strong><br>Initiation RedCap, dashboards via API Python, automatisation d'insertion d'images cliniques.`,
-    en: `<strong>June – July 2024 · IARC (WHO)</strong><br>RedCap onboarding, Python API dashboards, automated insertion of clinical images.`
+
+  'exp.4.period': { fr: 'Juin 2022',        en: 'June 2022' },
+  'exp.4.org':    { fr: 'La Nuit du Code',  en: 'La Nuit du Code' },
+  'exp.4.place':  { fr: 'Lycée Vaugelas, Chambéry', en: 'Lycée Vaugelas, Chambéry' },
+  'exp.4.role':   { fr: '🏆 Vainqueur — niveau Première', en: '🏆 Winner — Year 12 level' },
+  'exp.4.desc':   {
+    fr: `Développement d'un projet Python en équipe dans un temps limité, en conditions de concours.`,
+    en: `Team-built Python project delivered under contest time pressure.`
   },
-  'panel.experience.4': {
-    fr: `<strong>Juin 2022 · La Nuit du Code — 🏆 Vainqueur niveau Première</strong><br>Développement d'un projet Python en équipe dans un temps limité (Lycée Vaugelas).`,
-    en: `<strong>June 2022 · La Nuit du Code — 🏆 Winner (Year 12 level)</strong><br>Team Python project built under time pressure (Lycée Vaugelas).`
+
+  /* ---- FORMATION ---- */
+  'form.tag':   { fr: '// Formation',        en: '// Education' },
+  'form.title': { fr: 'Parcours académique', en: 'Academic background' },
+
+  'form.1.period': { fr: '2026 – 2029', en: '2026 – 2029' },
+  'form.1.school': { fr: 'ECE Lyon',    en: 'ECE Lyon' },
+  'form.1.detail': {
+    fr: `Cycle ingénieur — Majeure Digital Transformation & Innovation, 1ʳᵉ année.`,
+    en: `Engineering cycle — Digital Transformation & Innovation Major, 1st year.`
+  },
+
+  'form.2.period': { fr: '2023 – 2026',          en: '2023 – 2026' },
+  'form.2.school': { fr: 'Gaming Campus Lyon',   en: 'Gaming Campus Lyon' },
+  'form.2.detail': {
+    fr: `Bachelor G.Tech — Développement Gameplay, diplôme obtenu.`,
+    en: `Bachelor G.Tech — Gameplay Development track, degree awarded.`
+  },
+
+  'form.3.period': { fr: '2022 – 2023',                en: '2022 – 2023' },
+  'form.3.school': { fr: 'Lycée Vaugelas, Chambéry',   en: 'Lycée Vaugelas, Chambéry' },
+  'form.3.detail': {
+    fr: `Baccalauréat général — Spécialités Maths & NSI, Mention Assez Bien.`,
+    en: `French high-school diploma — Maths & Computer Science specialties, Honourable Mention.`
   },
 
   'footer.text': { fr: '© 2026 Boutarin Antoine —', en: '© 2026 Boutarin Antoine —' },
@@ -177,10 +213,17 @@ Object.assign(translations, {
   /* ---- SKILLS ---- */
   'skills.tag':   { fr: '// Compétences',  en: '// Skills' },
   'skills.title': { fr: 'Stack technique', en: 'Tech stack' },
-  'skills.group.languages': { fr: 'Langages',       en: 'Languages' },
-  'skills.group.systems':   { fr: 'Systèmes',       en: 'Systems' },
-  'skills.group.tools':     { fr: 'Outils',         en: 'Tools' },
-  'skills.group.concepts':  { fr: 'Concepts',       en: 'Concepts' },
+  'skills.group.languages': { fr: 'Langages',                    en: 'Languages' },
+  'skills.group.devtools':  { fr: 'Outils de développement',     en: 'Development tools' },
+  'skills.group.platforms': { fr: 'Environnements & plateformes', en: 'Environments & platforms' },
+  'skills.group.methods':   { fr: 'Méthodes & concepts',         en: 'Methods & concepts' },
+
+  'skills.m.automation': { fr: 'Automatisation de processus', en: 'Process automation' },
+  'skills.m.api':        { fr: "Intégration d'API",           en: 'API integration' },
+  'skills.m.tests':      { fr: 'Tests automatisés',           en: 'Automated testing' },
+  'skills.m.doc':        { fr: 'Documentation technique',     en: 'Technical documentation' },
+  'skills.m.gdpr':       { fr: 'Conformité RGPD',             en: 'GDPR compliance' },
+
   'skills.legend.hot': { fr: 'Maîtrisé',    en: 'Proficient' },
   'skills.legend.mid': { fr: 'En pratique', en: 'Practising' },
 });
