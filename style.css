@@ -562,6 +562,11 @@ img { max-width: 100%; display: block; }
   color: var(--muted);
 }
 
+/* Vignette de VOD : cadrage centré, contrairement aux captures d'interface */
+.project-vod img {
+  object-position: center;
+}
+
 /* Projet mis en avant : le plus proche du profil visé */
 .project-featured {
   border-color: rgba(91,62,255,0.4);

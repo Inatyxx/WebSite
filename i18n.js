@@ -110,6 +110,14 @@ const translations = {
   'project.3.desc':  { fr: 'Jeu avec génération procédurale de l\'environnement via FastNoiseLite.', en: 'Game with procedurally generated environment using FastNoiseLite.' },
   'project.4.title': { fr: 'WatchList',               en: 'WatchList' },
   'project.4.desc':  { fr: 'Tracker de films et séries avec recherche TMDB, affiches et suivi épisode par épisode pour les séries.', en: 'Movie and TV tracker with TMDB search, posters, and per-episode tracking for series.' },
+  'project.5.title': { fr: 'La Grande Famiglia', en: 'La Grande Famiglia' },
+  'project.5.desc':  {
+    fr: `Jeu de cartes 2D réalisé à deux en cinq jours. J'ai pris en charge toute la partie interface : architecture MVC sur l'ensemble des menus, système de slots et d'inventaire, transitions et animations de cartes. Le jeu a été testé en direct par le streamer Crocodyle.`,
+    en: `2D card game built by a team of two in five days. I handled the whole interface layer: MVC architecture across every menu, card slot and inventory system, plus card transitions and animations. The game was played live on stream by Crocodyle.`
+  },
+  'project.tag.team2': { fr: 'Équipe de 2', en: 'Team of 2' },
+  'project.btn.vod':   { fr: 'Voir le test en VOD →', en: 'Watch the stream test →' },
+
   'project.status.progress': { fr: 'En cours — 2026', en: 'In progress — 2026' },
   'project.tag.ai':  { fr: 'Développé avec l\'IA', en: 'Built with AI' },
   'project.btn':     { fr: 'Voir sur Itch.io →',      en: 'View on Itch.io →' },
