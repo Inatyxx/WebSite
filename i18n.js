@@ -102,8 +102,6 @@ const translations = {
   'projects.title':  { fr: 'Projets',             en: 'Projects' },
   'projects.sub':    { fr: 'Un aperçu de mes créations scolaires et personnelles.', en: 'A selection of my academic and personal projects.' },
 
-  'project.1.title': { fr: 'Gab and the Bears',      en: 'Gab and the Bears' },
-  'project.1.desc':  { fr: 'FPS avec une bonne gestion de caméra et des feedbacks clairs au joueur.', en: 'FPS game with solid camera handling and clear player feedback.' },
   'project.2.title': { fr: 'PokémonLike',             en: 'PokémonLike' },
   'project.2.desc':  { fr: 'Jeu Pokémon recréé en console pour apprendre les bases du C# et de la POO.', en: 'Console Pokémon clone built to learn C# fundamentals and OOP.' },
   'project.3.title': { fr: 'HungryShark But Better',  en: 'HungryShark But Better' },
