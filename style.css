@@ -484,13 +484,74 @@ img { max-width: 100%; display: block; }
   font-size: 0.95rem;
 }
 
+.projects-main {
+  padding: 0 5vw 4rem;
+}
+
+/* Deux familles : ce qui est personnel, ce qui vient du cursus */
+.projects-section + .projects-section {
+  margin-top: 3.5rem;
+  padding-top: 3rem;
+  border-top: 1px solid var(--border);
+}
+
+.projects-section .section-header {
+  margin-bottom: 1.75rem;
+}
+
+.projects-section .section-header h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 5vw 4rem;
+}
+
+/* Carte large : mise en page horizontale quand elle occupe seule sa rangée */
+@media (min-width: 900px) {
+  .project-card.project-wide {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    align-items: stretch;
+  }
+
+  .project-card.project-wide .project-video {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .project-card.project-wide .project-body {
+    padding: 2rem 2.2rem;
+    justify-content: center;
+  }
+
+  /* La description ne s'étire pas : le contenu reste groupé */
+  .project-card.project-wide .project-body p {
+    flex: 0 1 auto;
+  }
+
+  /* Dans la modale, elle reprend la disposition verticale des autres cartes */
+  .project-card.project-wide.in-modal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-card.project-wide.in-modal .project-video {
+    aspect-ratio: 16/9;
+    height: auto;
+    min-height: 0;
+  }
+
+  .project-card.project-wide.in-modal .project-body {
+    padding: 1.25rem 1.4rem;
+  }
 }
 
 .project-card {

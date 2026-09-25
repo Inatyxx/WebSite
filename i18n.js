@@ -100,7 +100,18 @@ const translations = {
 
   /* ---- PROJECTS ---- */
   'projects.title':  { fr: 'Projets',             en: 'Projects' },
-  'projects.sub':    { fr: 'Un aperçu de mes créations scolaires et personnelles.', en: 'A selection of my academic and personal projects.' },
+  'projects.sub':    { fr: 'Ce que je construis de moi-même, et ce qui vient du cursus.', en: 'What I build on my own, and what came out of coursework.' },
+
+  'projects.group.personal':      { fr: 'Projets personnels', en: 'Personal projects' },
+  'projects.group.personal.note': {
+    fr: `Menés en dehors des cours, sur mon temps, et maintenus dans la durée.`,
+    en: `Built outside of coursework, on my own time, and maintained over time.`
+  },
+  'projects.group.school':        { fr: 'Projets de cursus — Bachelor G.Tech', en: 'Coursework — Bachelor G.Tech' },
+  'projects.group.school.note':   {
+    fr: `Projets encadrés, réalisés en équipe sur une à deux semaines. Chaque carte précise l'effectif et la part que j'ai tenue.`,
+    en: `Supervised projects, built in teams over one to two weeks. Each card states the team size and the part I handled.`
+  },
 
   'project.2.title': { fr: 'PokémonLike',             en: 'PokémonLike' },
   'project.2.desc':  {
