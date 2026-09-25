@@ -104,8 +104,8 @@ const translations = {
 
   'project.2.title': { fr: 'PokémonLike',             en: 'PokémonLike' },
   'project.2.desc':  {
-    fr: `Clone de Pokémon jouable en console, écrit en C# : rendu géré pixel par pixel, sauvegarde sérialisée en JSON, et les systèmes de combat et de capture.`,
-    en: `Playable console Pokémon clone written in C#: pixel-by-pixel rendering, JSON-serialised saves, and the battle and capture systems.`
+    fr: `Clone de Pokémon jouable en console, réalisé à trois en une semaine : le rendu est géré pixel par pixel via des séquences ANSI. Je me suis occupé de la sérialisation — chargement des données JSON et sauvegardes — et du calcul de dégâts en combat, repris de la formule officielle Pokémon.`,
+    en: `Playable console Pokémon clone, built by three people in one week, with pixel-by-pixel rendering through ANSI escape codes. I handled serialisation — JSON data loading and save files — and the battle damage formula, ported from the official Pokémon games.`
   },
   'project.3.title': { fr: 'HungryShark But Better',  en: 'HungryShark But Better' },
   'project.3.desc':  { fr: 'Jeu Unity dont l\'environnement est généré procéduralement à partir de FastNoiseLite.', en: 'Unity game whose environment is procedurally generated using FastNoiseLite.' },
@@ -118,6 +118,7 @@ const translations = {
   },
   'project.tag.team2': { fr: 'Équipe de 2', en: 'Team of 2' },
   'project.tag.week':  { fr: '1 semaine',   en: '1 week' },
+  'project.tag.team3': { fr: 'Équipe de 3', en: 'Team of 3' },
   'project.btn.vod':   { fr: 'Voir le test en VOD →', en: 'Watch the stream test →' },
   'project.btn.repo':  { fr: 'Voir le code sur GitHub →', en: 'View the code on GitHub →' },
 
