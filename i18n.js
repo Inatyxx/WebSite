@@ -103,7 +103,10 @@ const translations = {
   'projects.sub':    { fr: 'Un aperçu de mes créations scolaires et personnelles.', en: 'A selection of my academic and personal projects.' },
 
   'project.2.title': { fr: 'PokémonLike',             en: 'PokémonLike' },
-  'project.2.desc':  { fr: 'Clone de Pokémon en console, écrit en C#. Un projet court, mais jouable de bout en bout.', en: 'Console Pokémon clone written in C#. A short project, but playable from start to finish.' },
+  'project.2.desc':  {
+    fr: `Clone de Pokémon jouable en console, écrit en C# : rendu géré pixel par pixel, sauvegarde sérialisée en JSON, et les systèmes de combat et de capture.`,
+    en: `Playable console Pokémon clone written in C#: pixel-by-pixel rendering, JSON-serialised saves, and the battle and capture systems.`
+  },
   'project.3.title': { fr: 'HungryShark But Better',  en: 'HungryShark But Better' },
   'project.3.desc':  { fr: 'Jeu Unity dont l\'environnement est généré procéduralement à partir de FastNoiseLite.', en: 'Unity game whose environment is procedurally generated using FastNoiseLite.' },
   'project.4.title': { fr: 'WatchList',               en: 'WatchList' },
@@ -116,6 +119,7 @@ const translations = {
   'project.tag.team2': { fr: 'Équipe de 2', en: 'Team of 2' },
   'project.tag.week':  { fr: '1 semaine',   en: '1 week' },
   'project.btn.vod':   { fr: 'Voir le test en VOD →', en: 'Watch the stream test →' },
+  'project.btn.repo':  { fr: 'Voir le code sur GitHub →', en: 'View the code on GitHub →' },
 
   'project.status.progress': { fr: 'En cours — 2026', en: 'In progress — 2026' },
   'project.tag.ai':  { fr: 'Développé avec l\'IA', en: 'Built with AI' },
